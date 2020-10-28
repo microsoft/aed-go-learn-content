@@ -1,4 +1,4 @@
-# Learning Path: Get started with Go development
+# Learning Path: Take your first steps with Go development
 
 ## Timeline
 
@@ -23,7 +23,7 @@
 
 | Type | Title | Description | Duration |
 |------|-------|-------------|----------|
-| Learning Path | Get started with Go development | This LP is so cool | ~6 hours |
+| Learning Path | Take your first steps with Go development | This LP is so cool | ~6 hours |
 | Module | Create your first Go program | This module is awesome | 45 min |
 | Module | Packages | This module is awesome | 45 min |
 | Module | Data types | This module is awesome | 45 min |
