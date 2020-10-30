@@ -24,7 +24,7 @@
 | Type | Title | Description | Duration |
 |------|-------|-------------|----------|
 | Learning Path | Take your first steps with Go development | This LP is so cool | ~6 hours |
-| Module | Create your first Go program | This module is awesome | 45 min |
+| Module | Install Go and create your first program | This module is awesome | 45 min |
 | Module | Packages, variables, functions | This module is awesome | 45 min |
 | Module | Data types: structs, slices, maps | This module is awesome | 45 min |
 | Module | Flow control statements | This module is awesome | 45 min |
