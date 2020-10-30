@@ -6,12 +6,12 @@
 
 | Item | Owner | Status | Deadline |
 |------|-------|--------|----------|
-| Propose content | @meaghanlewis | Not Started | 10/16/2020 |
+| Propose content | @meaghanlewis | Complete | 10/16/2020 |
 | Get content into Learn and with the vendor | @shanama | Not Started | < DATE > |
 | Request art assets | @shanama | Not Started | < Date > |
-| Write Content | < YOUR NAME > | Not Started | < DATE > |
-| Review Content | < YOUR REVIEWER(S) NAME(S) > | Not Started | < DATE > |
-| Content to Aquent | < YOUR NAME > | Not Started | < DATE > |
+| Write Content | @meaghanlewis +  | In planning | 11/9/2020|
+| Review Content | @meaghanlewis + | Not Started | < DATE > |
+| Content to Aquent | @meaghanlewis | Not Started | 12/28/2020 |
 | Content Draft on Learn | Aquent | Not Started | < DATE > |
 | Sign off on Content on Learn | < YOUR NAME > | Not Started | < DATE > |
 | Publish Content | @shanama | Not Started | < DATE > |
