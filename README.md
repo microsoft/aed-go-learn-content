@@ -25,13 +25,13 @@
 |------|-------|-------------|----------|
 | Learning Path | Take your first steps with Go development | This LP is so cool | ~6 hours |
 | Module | Create your first Go program | This module is awesome | 45 min |
-| Module | Packages | This module is awesome | 45 min |
-| Module | Data types | This module is awesome | 45 min |
+| Module | Packages, variables, functions | This module is awesome | 45 min |
+| Module | Data types: structs, slices, maps | This module is awesome | 45 min |
 | Module | Flow control statements | This module is awesome | 45 min |
 | Module | Methods and interfaces | This module is awesome | 45 min |
 | Module | Concurrency | This module is awesome | 45 min |
-| Module | Testing | This module is awesome | 45 min |
-| Module | Deploying | This module is awesome | 45 min |
+| Module | Write and test a program | This module is awesome | 45 min |
+| Module | Publishing modules | This module is awesome | 45 min |
 
 ## Promotion and Marketing
 
