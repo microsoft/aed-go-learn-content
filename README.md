@@ -6,12 +6,12 @@
 
 | Item | Owner | Status | Deadline |
 |------|-------|--------|----------|
-| Propose content | @meaghanlewis | Not Started | 10/16/2020 |
+| Propose content | @meaghanlewis | Complete | 10/16/2020 |
 | Get content into Learn and with the vendor | @shanama | Not Started | < DATE > |
 | Request art assets | @shanama | Not Started | < Date > |
-| Write Content | < YOUR NAME > | Not Started | < DATE > |
-| Review Content | < YOUR REVIEWER(S) NAME(S) > | Not Started | < DATE > |
-| Content to Aquent | < YOUR NAME > | Not Started | < DATE > |
+| Write Content | @meaghanlewis +  | In planning | 11/9/2020|
+| Review Content | @meaghanlewis + | Not Started | < DATE > |
+| Content to Aquent | @meaghanlewis | Not Started | 12/28/2020 |
 | Content Draft on Learn | Aquent | Not Started | < DATE > |
 | Sign off on Content on Learn | < YOUR NAME > | Not Started | < DATE > |
 | Publish Content | @shanama | Not Started | < DATE > |
@@ -24,14 +24,14 @@
 | Type | Title | Description | Duration |
 |------|-------|-------------|----------|
 | Learning Path | Take your first steps with Go development | This LP is so cool | ~6 hours |
-| Module | Create your first Go program | This module is awesome | 45 min |
-| Module | Packages | This module is awesome | 45 min |
-| Module | Data types | This module is awesome | 45 min |
+| Module | Install Go and create your first program | This module is awesome | 45 min |
+| Module | Packages, variables, functions | This module is awesome | 45 min |
+| Module | Data types: structs, slices, maps | This module is awesome | 45 min |
 | Module | Flow control statements | This module is awesome | 45 min |
 | Module | Methods and interfaces | This module is awesome | 45 min |
 | Module | Concurrency | This module is awesome | 45 min |
-| Module | Testing | This module is awesome | 45 min |
-| Module | Deploying | This module is awesome | 45 min |
+| Module | Write and test a program | This module is awesome | 45 min |
+| Module | Publishing modules | This module is awesome | 45 min |
 
 ## Promotion and Marketing
 
