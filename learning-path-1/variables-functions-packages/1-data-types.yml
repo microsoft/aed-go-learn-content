@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: 
+metadata:
+  title: Learn about basic data types
+  description: 
+  ms.date: 
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Learn about basic data types
+durationInMinutes: 
+content: |
+  [!include[](includes/1-data-types.md)]
