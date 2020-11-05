@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: 
+metadata:
+  title: What is Go
+  description: 
+  ms.date: 
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: What is Go
+durationInMinutes: 
+content: |
+  [!include[](includes/1-what-is-go.md)]

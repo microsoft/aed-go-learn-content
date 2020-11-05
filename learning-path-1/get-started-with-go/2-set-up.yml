@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: 
+metadata:
+  title: Exercise - Set up your development environment
+  description: 
+  ms.date: 
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Set up your development environment
+durationInMinutes:
+content: |
+  [!include[](includes/2-set-up.md)]
