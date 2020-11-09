@@ -1,19 +1,17 @@
 # Learning Path
 
-- Learning paths must be at least 3 modules and preferably no longer than 7. 
-- Modules can be contained within multiple learning paths. 
-- You may put other, already existing modules in your learning path.
-
-Please fill out the below info to help us keep your learning path organized properly.
-
 Learning Path Title:  
-< TITLE >
+Take your first steps with Go
 
 Module Titles:  
-- < TITLE >
-- < TITLE >
-- < TITLE >
-- < TITLE >
+- Get started with Go
+- Understand how to use variables, functions, and packages
+- Use data types and structs, Arrays, Slices, and Maps
+- Iterate through code with flow control statements
+- Implement error handling and logging
+- Use methods and interfaces
+- Learn how concurrency works in Go
+- Write and test a program
 
 ## Instructions
 
