@@ -2,13 +2,13 @@
 uid: 
 metadata:
   title: Exercise - Hello World
-  description: 
+  description: Write your first Go program in VS Code.
   ms.date: 
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Hello World
-durationInMinutes:
+durationInMinutes: 5
 content: |
-  [!include[](includes/3-hello-world.md)]
+  [!include[](includes/5-hello-world.md)]

@@ -9,51 +9,48 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Summary
-durationInMinutes:
+durationInMinutes: 1
 content: |
-  [!include[](includes/5-summary.md)]
+  [!include[](includes/7-summary.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Question1"
+  - content: " What’s the single command for executing and compiling Go apps?"
     choices:
-    - content: "Answer1"
-      isCorrect: false
+    - content: "go build"
+      isCorrect: true
       explanation: "Explanation1"
-    - content: "Answer2"
+    - content: "go run"
       isCorrect: false
       explanation: "Explanation2"
-    - content: "Answer3"
+    - content: "go install"
       isCorrect: false
       explanation: "Explanation3"
-    - content: "Answer4"
-      isCorrect: true
+    - content: "go compile"
+      isCorrect: false
       explanation: "Explanation4"
-  - content: "Question2"
+  - content: "Where should you place your project files in your workstation?"
     choices:
-    - content: "Answer1"
+    - content: "Anywhere I want"
       isCorrect: false
       explanation: "Explanation1"
-    - content: "Answer2"
+    - content: "At the root file system"
       isCorrect: false
       explanation: "Explanation2"
-    - content: "Answer3"
+    - content: "At the workspace directory"
+      isCorrect: true
+      explanation: "Explanation3"
+  - content: "Do Go projects share the same workspace?"
+    choices:
+    - content: "Yes, you need to create all projects in the same workspace directory ($GOPATH)"
+      isCorrect: true
+      explanation: "Explanation1"
+    - content: "No, you can create a different workspace per project"
+      isCorrect: false
+      explanation: "Explanation2"
+    - content: "No, you can create a workspace per project as long as you have properly $GOPATH"
       isCorrect: false
       explanation: "Explanation3"
     - content: "Answer4"
-      isCorrect: true
-      explanation: "Explanation4"
-  - content: "Question3"
-    choices:
-    - content: "Answer1"
       isCorrect: false
-      explanation: "Explanation1"
-    - content: "Answer2"
-      isCorrect: false
-      explanation: "Explanation2"
-    - content: "Answer3"
-      isCorrect: false
-      explanation: "Explanation3"
-    - content: "Answer4"
-      isCorrect: true
       explanation: "Explanation4"

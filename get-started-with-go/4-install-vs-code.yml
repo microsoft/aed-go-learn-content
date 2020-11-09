@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: 
 metadata:
-  title: Exercise - Install Go
-  description: 
+  title: Exercise - Install VS Code and the Go Extension
+  description: Finish setting up your development environment with installing VS Code and the Go language extension.
   ms.date: 
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Exercise - Install Go
-durationInMinutes:
+title: Exercise - Install VS Code and the Go Extension
+durationInMinutes: 6
 content: |
-  [!include[](includes/2-install-go.md)]
+  [!include[](includes/4-install-vs-code.md)]

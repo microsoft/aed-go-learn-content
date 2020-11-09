@@ -2,13 +2,13 @@
 uid: 
 metadata:
   title: What is Go
-  description: 
+  description: Learn about the history and use cases of the Go programming language. 
   ms.date: 
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: What is Go
-durationInMinutes: 
+durationInMinutes: 2
 content: |
   [!include[](includes/1-what-is-go.md)]

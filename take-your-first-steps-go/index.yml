@@ -3,22 +3,23 @@
 # Fill out all fields with comments
 uid: 
 metadata:
-  title: # Add your desired learning path title. All titles must be sentence-case.
+  title: Take your first steps with Go
   description: # Add a short description of your learning path for search engines.
   brand: 
   ms.date: 
-  author: # Your GitHub username (or whomever you'd like to give author attribution to)
-  ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
+  author: meaghanlewis
+  ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: # Your desired learning path title. Same as above.
+title: Take your first steps with Go
 summary: | # Add a description for your learning path to be displayed to users in the given form. Can include the description from above.
   <Short description of your learning path> 
 
   In this learning path you will:
-    - <learning objective 1>
-    - <learning objective 2>
-    - <learning objective 3>
+    - Install and configure Go in your local workstation
+    - Install and configure VS Code and the Go extension
+    - Explore the Go Playground
+    - Create your first Go application
 
 prerequisites: | # Fill in a detailed list of prerequisites in this form
 #  - prereq 1
@@ -27,7 +28,7 @@ iconUrl: /learn/achievements/generic-trophy.svg # TODO change
 levels:
 - beginner
 roles:
-# - Add relevant user role(s) (developer, data scientist, etc.)
+- developer
 - student
 products:
 - 
