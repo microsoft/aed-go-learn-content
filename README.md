@@ -9,7 +9,7 @@
 | Propose content | @meaghanlewis | Complete | 10/16/2020 |
 | Get content into Learn and with the vendor | @shanama | Not Started | < DATE > |
 | Request art assets | @shanama | Not Started | < Date > |
-| Write Content | @meaghanlewis +  | In planning | 11/9/2020|
+| Write Content | @meaghanlewis +  | In progress | 11/9/2020|
 | Review Content | @meaghanlewis + | Not Started | < DATE > |
 | Content to Aquent | @meaghanlewis | Not Started | 12/28/2020 |
 | Content Draft on Learn | Aquent | Not Started | < DATE > |
@@ -23,8 +23,8 @@
 
 | Type | Title | Description | Duration |
 |------|-------|-------------|----------|
-| Learning Path | Take your first steps with Go development | This LP is so cool | ~6 hours |
-| Module | Install Go and create your first program | This module is awesome | 45 min |
+| Learning Path | Take your first steps with Go development | Learn how to program using Go. | ~6 hours |
+| Module | Get started with Go | In this module, you’ll start taking your first steps with Go. | 45 min |
 | Module | Packages, variables, functions | This module is awesome | 45 min |
 | Module | Data types: structs, slices, maps | This module is awesome | 45 min |
 | Module | Flow control statements | This module is awesome | 45 min |
