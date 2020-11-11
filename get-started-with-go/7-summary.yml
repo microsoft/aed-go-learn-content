@@ -18,39 +18,25 @@ quiz:
   - content: " What’s the single command for executing and compiling Go apps?"
     choices:
     - content: "go build"
-      isCorrect: true
-      explanation: "Explanation1"
-    - content: "go run"
       isCorrect: false
-      explanation: "Explanation2"
+      explanation: "go build compiles the the program and generates the binary executable, but doesn't run the program"
+    - content: "go run"
+      isCorrect: true
+      explanation: "go run compiles and runs the program, but doesn't generate the binary executable"
     - content: "go install"
       isCorrect: false
-      explanation: "Explanation3"
+      explanation: "go install compiles, generates the binary, and moves it to the $GOBIN directory (doesn't run the program)"
     - content: "go compile"
       isCorrect: false
-      explanation: "Explanation4"
+      explanation: "go compile is an invalid command"
   - content: "Where should you place your project files in your workstation?"
     choices:
     - content: "Anywhere I want"
       isCorrect: false
-      explanation: "Explanation1"
+      explanation: "Althoug this is true, we haven't covered how to do it yet"
     - content: "At the root file system"
       isCorrect: false
-      explanation: "Explanation2"
+      explanation: "Partially true, but we haven't covered how to create projects outside of the $GOPATH yet"
     - content: "At the workspace directory"
       isCorrect: true
-      explanation: "Explanation3"
-  - content: "Do Go projects share the same workspace?"
-    choices:
-    - content: "Yes, you need to create all projects in the same workspace directory ($GOPATH)"
-      isCorrect: true
-      explanation: "Explanation1"
-    - content: "No, you can create a different workspace per project"
-      isCorrect: false
-      explanation: "Explanation2"
-    - content: "No, you can create a workspace per project as long as you have properly $GOPATH"
-      isCorrect: false
-      explanation: "Explanation3"
-    - content: "Answer4"
-      isCorrect: false
-      explanation: "Explanation4"
+      explanation: "At the moment, this is the only option we've explored, then it's the correct answer"
