@@ -3,15 +3,15 @@ You can use any text editor to write Go applications, but when you use an IDE li
 
 When you have VS Code and the Go extension, you get the following benefits:
 
-* Format applications following Go standards
-* Add package references as soon as you add a new line and save your code.
-* Remove package references that your application is not using anymore.
-* Debug your applications by allowing you to set breakpoints and use watchers at runtime
-* Provides suggested completions for code and package references
-* Hover information to get more details about the code referencing its documentation
-* Provides signature help like listing the parameters a function has
-* Navigate the project’s code easily when you have multiple files
-* Support for testing like generating test skeletons for functions
+- Format applications following Go standards
+- Add package references as soon as you add a new line and save your code.
+- Remove package references that your application is not using anymore.
+- Debug your applications by allowing you to set breakpoints and use watchers at runtime
+- Provides suggested completions for code and package references
+- Hover information to get more details about the code referencing its documentation
+- Provides signature help like listing the parameters a function has
+- Navigate the project’s code easily when you have multiple files
+- Support for testing like generating test skeletons for functions
 
 Below are the instructions to install Visual Studio Code on your workstation.
 
@@ -26,8 +26,8 @@ Locate the file you’ve just downloaded and open Finder. Drag and drop the Visu
 **Step 3: Start the app from the Applications folder**
 To start the Visual Studio Code app, double-click on the icon from the Applications folder.
 
-**Important!**
-You might see a warning that Visual Studio Code can't be opened because Apple can't check it for malicious software. If that happens, select OK to dismiss the message. Then right-click Visual Studio Code in the Applications folder and choose the Open menu. If you choose this option, Visual Studio Code should open without any further issues.
+**> [!NOTE]**
+> You might see a warning that Visual Studio Code can't be opened because Apple can't check it for malicious software. If that happens, select OK to dismiss the message. Then right-click Visual Studio Code in the Applications folder and choose the Open menu. If you choose this option, Visual Studio Code should open without any further issues.
 
 ## Install Visual Studio Code on Linux
 
@@ -70,4 +70,3 @@ Select the extension published by the “Go Team at Google” (usually the first
 
 **Step 3: Install the Go extensions**
 Below the extension’s description, you’ll see an **Install** button; click on it to install the extension in your workstation. When the installation is complete, the button’s text will change to **Uninstall**, meaning that you’ve successfully installed the Go extension.
-
