@@ -8,7 +8,7 @@ At the end of the module, you’ll create your first “Hello World!” applicat
 
 In this module, you will:
 
-* Install and configure Go in your local workstation
+- Install and configure Go in your local workstation
 * Install and configure VS Code and the Go extension
 * Explore the Go Playground
 * Create your first Go application
