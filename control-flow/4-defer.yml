@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: 
+metadata:
+  title: Exercise - Use a defer statement
+  description: 
+  ms.date: 
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: DExercise - Use a defer statement
+durationInMinutes:
+content: |
+  [!include[](includes/4-defer.md)]
