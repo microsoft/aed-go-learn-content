@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: 
 metadata:
-  title: Learn about basic data types
+  title: Declare and use variables
   description: 
   ms.date: 
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Learn about basic data types
-durationInMinutes: 
+title: Declare and use variables
+durationInMinutes:
 content: |
-  [!include[](includes/1-data-types.md)]
+  [!include[](includes/1-variables.md)]
