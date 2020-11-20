@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: 
 metadata:
-  title: Declare and use variables
-  description: Learn about how to declare and use variables in Go programs.
+  title: Exercise - Use a defer statement
+  description: 
   ms.date: 
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Declare and use variables
+title: DExercise - Use a defer statement
 durationInMinutes:
 content: |
-  [!include[](includes/1-variables.md)]
+  [!include[](includes/4-defer.md)]

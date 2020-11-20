@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: 
 metadata:
-  title: Declare and use variables
-  description: Learn about how to declare and use variables in Go programs.
+  title: Exercise - Use switch statements
+  description: 
   ms.date: 
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Declare and use variables
+title: Exercise - Use switch statements
 durationInMinutes:
 content: |
-  [!include[](includes/1-variables.md)]
+  [!include[](includes/3-switch.md)]
