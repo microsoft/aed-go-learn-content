@@ -3,11 +3,11 @@ We mentioned early in this module that if you don’t want to install Go on your
 
 However, the Go Playground comes with a few limitations that might impact your learning journey, like:
 
-* Keyboard inputs are not supported
-* Random numbers are deterministic
-* Time is constant. You get the same value every time.
+- Keyboard inputs are not supported
+- Random numbers are deterministic
+- Time is constant. You get the same value every time.
 
-![alt_text](../media/go-playground.jpg "The Go Playground")
+:::image type="content" source="media\go-playground.jpg" alt-text="Image showing the Go Playground":::
 
 Head over to the Go Playground, and click on the “Run” button.
 

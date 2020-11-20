@@ -9,7 +9,7 @@ In case you don’t want to install Go locally, you can use the [Go Playground](
 To install Go on macOS, you can do it using Homebrew, or download the Go installer from the downloads page at [https://golang.org/dl/](https://golang.org/dl/). Here you can find both approaches, choose only one.
 
 ### Install Go using Homebrew
-The simplest way to install Go is using Homebrew.
+The simplest way to install Go is using [Homebrew](https://brew.sh/).
 
 Open a terminal prompt, and run the following commands to install the latest version of Go:
 

@@ -10,10 +10,10 @@ cd $GOPATH/src
 
 Once there, you can start VS Code from your terminal and start editing the current directory files. However, you need to register the VS Code CLI in your **$PATH** environment variable. To do so, follow these steps:
 
-* Launch VS Code
-* Open the **Command Palette** under the **View** top menu and type 'shell command' to find the **Shell Command: Install 'code' command in PATH** command.
-* Restart the terminal for the new **$PATH** value to take effect. You'll be able to type 'code .' in any folder to start editing files in that folder.
-* Close VS Code.
+- Launch VS Code
+- Open the **Command Palette** under the **View** top menu and type 'shell command' to find the **Shell Command: Install 'code' command in PATH** command.
+- Restart the terminal for the new **$PATH** value to take effect. You'll be able to type 'code .' in any folder to start editing files in that folder.
+- Close VS Code.
 
 Now, run the following command to open VS Code in the current directory:
 
