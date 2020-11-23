@@ -8,7 +8,7 @@
 |------|-------|--------|----------|
 | Propose content | @meaghanlewis | Complete | 10/16/2020 |
 | Get content into Learn and with the vendor | @shanama | Not Started | < DATE > |
-| Request art assets | @shanama | Not Started | < Date > |
+| Request art assets | @shanama | Requested | 11/19/2020 |
 | Write Content | @christianhxc + @meaghanlewis | In progress | 11/9/2020|
 | Review Content | @meaghanlewis | Not Started | < DATE > |
 | Content to Aquent | @meaghanlewis | Not Started | 12/28/2020 |
