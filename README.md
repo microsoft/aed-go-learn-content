@@ -9,8 +9,8 @@
 | Propose content | @meaghanlewis | Complete | 10/16/2020 |
 | Get content into Learn and with the vendor | @shanama | Not Started | < DATE > |
 | Request art assets | @shanama | Not Started | < Date > |
-| Write Content | @meaghanlewis +  | In progress | 11/9/2020|
-| Review Content | @meaghanlewis + | Not Started | < DATE > |
+| Write Content | @christianhxc + @meaghanlewis | In progress | 11/9/2020|
+| Review Content | @meaghanlewis | Not Started | < DATE > |
 | Content to Aquent | @meaghanlewis | Not Started | 12/28/2020 |
 | Content Draft on Learn | Aquent | Not Started | < DATE > |
 | Sign off on Content on Learn | < YOUR NAME > | Not Started | < DATE > |
