@@ -7,13 +7,27 @@
 | Item | Owner | Status | Deadline |
 |------|-------|--------|----------|
 | Propose content | @meaghanlewis | Complete | 10/16/2020 |
-| Get content into Learn and with the vendor | @shanama | Not Started | < DATE > |
 | Request art assets | @shanama | Requested | 11/19/2020 |
-| Write Content | @christianhxc + @meaghanlewis | In progress | 11/9/2020|
+| Write Content | @christianhxc | In progress | 11/9/2020|
+| Module 1 content | @christianhxc + @meaghanlewis | Complete | 11/13/2020 |
+| Module 1 content to Aquent | @shanama | Not Started |  |
+| Module 2 content | @christianhxc + @meaghanlewis | In progress | 11/16/2020 |
+| Module 2 content to Aquent | @shanama | Not Started |  |
+| Module 3 content | @christianhxc + @meaghanlewis | Not started | < DATE > |
+| Module 3 content to Aquent | @shanama | Not Started |  |
+| Module 4 content | @christianhxc + @meaghanlewis | Not started | < DATE > |
+| Module 4 content to Aquent | @shanama | Not Started |  |
+| Module 5 content | @christianhxc + @meaghanlewis | Not started | < DATE > |
+| Module 5 content to Aquent | @shanama | Not Started |  |
+| Module 6 content | @christianhxc + @meaghanlewis | Not started | < DATE > |
+| Module 6 content to Aquent | @shanama | Not Started |  |
+| Module 7 content | @christianhxc + @meaghanlewis | Not started | < DATE > |
+| Module 7 content to Aquent | @shanama | Not Started |  |
+| Module 8 content | @christianhxc + @meaghanlewis | Not started | < DATE > |
+| Module 8 content to Aquent | @shanama | Not Started |  |
 | Review Content | @meaghanlewis | Not Started | < DATE > |
-| Content to Aquent | @meaghanlewis | Not Started | 12/28/2020 |
 | Content Draft on Learn | Aquent | Not Started | < DATE > |
-| Sign off on Content on Learn | < YOUR NAME > | Not Started | < DATE > |
+| Sign off on Content on Learn | @meaghanlewis | Not Started | < DATE > |
 | Publish Content | @shanama | Not Started | < DATE > |
 | Review Live Content | < YOUR NAME > | Not Started | < DATE > |
 
@@ -25,13 +39,13 @@
 |------|-------|-------------|----------|
 | Learning Path | Take your first steps with Go development | Learn how to program using Go. | ~6 hours |
 | Module | Get started with Go | In this module, you’ll start taking your first steps with Go. | 45 min |
-| Module | Packages, variables, functions | This module is awesome | 45 min |
-| Module | Data types: structs, slices, maps | This module is awesome | 45 min |
-| Module | Flow control statements | This module is awesome | 45 min |
-| Module | Methods and interfaces | This module is awesome | 45 min |
-| Module | Concurrency | This module is awesome | 45 min |
-| Module | Write and test a program | This module is awesome | 45 min |
-| Module | Publishing modules | This module is awesome | 45 min |
+| Module | Understand how to use packages, variables, functions | Learn about basic data types and how to use variables, functions, and packages in Go programs. | 45 min |
+| Module | Iterate through code with flow control statements | Learn how to use different statements and loops in Go programs. | 45 min |
+| Module | Use data types and structs | Learn more about the data types that Go has available. | 45 min |
+| Module | Implement error handling and logging | Understand how to handle errors and log helpful messages in your Go programs. | 45 min |
+| Module | Use methods and interfaces | Learn about best practices for methods in interfaces in Go. | 45 min |
+| Module | Learn how concurrency works in Go | Understand more about concurrency, one of the most unique features in Go. | 45 min |
+| Module | Write and test a program | Using what you've learned about Go, write and test a complete program. | 45 min |
 
 ## Promotion and Marketing
 
