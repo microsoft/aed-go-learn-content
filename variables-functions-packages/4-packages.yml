@@ -2,13 +2,13 @@
 uid: 
 metadata:
   title: Learn about packages
-  description: Learn about how to package code.
+  description: Learn what a package is, how to create them, and how to consume external packages.
   ms.date: 
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Learn about packages
-durationInMinutes:
+durationInMinutes: 10
 content: |
   [!include[](includes/4-packages.md)]
