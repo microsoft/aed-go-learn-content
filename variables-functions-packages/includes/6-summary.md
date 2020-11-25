@@ -1,5 +1,6 @@
 # Summary
-We've covered the basics of what you need to start building more complex applications in Go. By now, you know how different ways to declare and initialize variables, the various data types Go provides, and you've used the most basic ones. 
+
+We've covered the basics of what you need to start building more complex applications in Go. By now, you know how different ways to declare and initialize variables, the various data types Go provides, and you've used the most basic ones.
 
 Additionally, you've learned how to create functions to organize your code and make it more maintainable. You've learned that Go is a "pass by value" language, but it also has support for using pointers, which we'll use in some of the upcoming modules.
 

@@ -1,4 +1,5 @@
 # Knowledge check
+
 1. How would you declare and initialize a variable?
 * var firstName string
 * firstName := "John" (Correct)
