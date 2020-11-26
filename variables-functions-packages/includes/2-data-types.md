@@ -56,7 +56,27 @@ You can learn about the different ranges for each type by looking at the [Go's s
 
 **Challenge:** Set another variable of type `int` and use either the value from the `integer32` or `integer64` variables to confirm the natural size of the variable in your system. If you're on a 32-bit system and use a value higher than 2147483647, you'll get an overflow error like `constant 9223372036854775807 overflows int`.
 
+> **Challenge Solution**:
+> ```go
+> package main
+> 
+> func main() {
+> 	var integer32 int = 2147483648
+> 	println(integer32)
+> }
+> ```
+
 **Challenge:** Declare an unsigned variable like `uint`, and initialize it with a negative value like `-10`. When you try to run the program, you should get an error like `constant -10 overflows uint`.
+
+> **Challenge Solution**:
+> ```go
+> package main
+> 
+> func main() {
+> 	var integer uint = -10
+> 	println(integer)
+> }
+> ```
 
 ## Floating-Point Numbers
 
