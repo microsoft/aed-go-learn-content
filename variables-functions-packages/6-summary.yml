@@ -9,51 +9,85 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Summary
-durationInMinutes:
+durationInMinutes: 3
 content: |
   [!include[](includes/6-summary.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Question1"
+  - content: "How do you declare and initialize a variable?"
     choices:
-    - content: "Answer1"
+    - content: "var firstName string"
       isCorrect: false
       explanation: "Explanation1"
-    - content: "Answer2"
-      isCorrect: false
+    - content: "firstName := \"John\""
+      isCorrect: true
       explanation: "Explanation2"
-    - content: "Answer3"
+    - content: "string firstName = \"John\""
       isCorrect: false
       explanation: "Explanation3"
-    - content: "Answer4"
-      isCorrect: true
+    - content: "firstName = \"John\""
+      isCorrect: false
       explanation: "Explanation4"
-  - content: "Question2"
+  - content: "What happens when you've declared variables but don't use them?"
     choices:
-    - content: "Answer1"
+    - content: "You simply get a warning."
       isCorrect: false
       explanation: "Explanation1"
-    - content: "Answer2"
+    - content: "Nothing, there's no problem if you have unused objects."
       isCorrect: false
       explanation: "Explanation2"
-    - content: "Answer3"
+    - content: "You get a warning, but the next time it won't compile."
       isCorrect: false
       explanation: "Explanation3"
-    - content: "Answer4"
+    - content: "You get an error; the program doesn't compile."
       isCorrect: true
       explanation: "Explanation4"
-  - content: "Question3"
+  - content: "How do data conversion types work in Go?"
     choices:
-    - content: "Answer1"
-      isCorrect: false
-      explanation: "Explanation1"
-    - content: "Answer2"
+    - content: "You have to do conversion explicitly; implicit conversion doesn't work in Go."
+      isCorrect: true
+      explanation: "Explanation 1"
+    - content: "You can do implicit casting from `int` to `int32`."
       isCorrect: false
       explanation: "Explanation2"
-    - content: "Answer3"
+    - content: "You can only do it through external libraries."
       isCorrect: false
       explanation: "Explanation3"
-    - content: "Answer4"
-      isCorrect: true
+    - content: "You can't convert from `int` to `string`, or vice-versa."
+      isCorrect: false
       explanation: "Explanation4"
+  - content: "Why would you use pointers in Go?"
+    choices:
+    - content: "Go doesn't have support for pointers."
+      isCorrect: false
+      explanation: "Explanation 1"
+    - content: "To free-up memory."
+      isCorrect: false
+      explanation: "Explanation2"
+    - content: "To change variable values from the function caller."
+      isCorrect: true
+      explanation: "Explanation3"
+  - content: "How many return values a function can have?"
+    choices:
+    - content: "Only one return value."
+      isCorrect: false
+      explanation: "Explanation 1"
+    - content: "Zero to many."
+      isCorrect: true
+      explanation: "Explanation2"
+    - content: "No more than two values."
+      isCorrect: false
+      explanation: "Explanation3"
+  - content: "How do you differentiate between a package and a standalone application?"
+    choices:
+    - content: "A standalone application uses the package main, and a package (library) use a different name."
+      isCorrect: true
+      explanation: "Explanation 1"
+    - content: "You have to run `go create library` and `go create program`."
+      isCorrect: false
+      explanation: "Explanation2"
+    - content: "It doesn't matter; it depends on how you use the code once you've finish programming."
+      isCorrect: false
+      explanation: "Explanation3"      
+  

@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Learn about basic data types
-durationInMinutes: 
+durationInMinutes: 8
 content: |
   [!include[](includes/2-data-types.md)]
