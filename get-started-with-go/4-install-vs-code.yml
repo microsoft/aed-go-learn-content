@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Install VS Code and the Go Extension
-durationInMinutes: 6
+durationInMinutes: 7
 content: |
   [!include[](includes/4-install-vs-code.md)]
