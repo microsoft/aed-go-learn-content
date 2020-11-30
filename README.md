@@ -39,7 +39,7 @@
 |------|-------|-------------|----------|
 | Learning Path | Take your first steps with Go development | Learn how to program using Go. | ~6 hours |
 | Module | Get started with Go | In this module, you’ll start taking your first steps with Go. | 45 min |
-| Module | Understand how to use packages, variables, functions | Learn about basic data types and how to use variables, functions, and packages in Go programs. | 45 min |
+| Module | Understand how to use packages, variables, and functions | Learn about basic data types and how to use variables, functions, and packages in Go programs. | 45 min |
 | Module | Iterate through code with flow control statements | Learn how to use different statements and loops in Go programs. | 45 min |
 | Module | Use data types and structs | Learn more about the data types that Go has available. | 45 min |
 | Module | Implement error handling and logging | Understand how to handle errors and log helpful messages in your Go programs. | 45 min |
