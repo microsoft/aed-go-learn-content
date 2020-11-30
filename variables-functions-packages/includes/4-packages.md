@@ -194,6 +194,19 @@ Version:  1.0
 
 **Challenge:** What happens if you try to call the `logMessage` variable or the `internalSum` function from the `calculator` package in the main application? Does it run? Give it a try!
 
+> **Challenge Solution**:
+> ```go
+> package main
+> 
+> import "github.com/myuser/calculator"
+> 
+> func main() {
+>     total := calculator.internalSum(5)
+>     println(total)
+>     println("Version: ", calculator.logMessage)
+> }
+> ```
+
 ### Publishing a Package
 
 [Publishing a Go package](https://github.com/golang/go/wiki/PackagePublishing) is relatively simple. You simply need to make the package source code publicly available. The majority of developers use GitHub to host packages and make them publicly available. That's the reason you'll sometimes find import in some programs references to `github.com`.

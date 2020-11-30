@@ -1,6 +1,8 @@
 # Declare and Use Variables
 
-Let's start this module by learning how to declare and use variables in Go. There are different ways to declare a variable, and we'll discover each of them, and you'll choose the one that best suits your needs or style. As we explain the core concepts for variables, we'll note some things specific to Go and that you don't typically find in other programming languages.
+Let's start this module by learning how to declare and use variables in Go. There are different ways to declare a variable, and we'll discover each of them, and you'll choose the one that best suits your needs or style. We'll note some things specific to Go and that you don't typically find in other programming languages as we explain the core concepts for variables.
+
+We're including code snippets in this section that you can run in VS Code or the Go Playground.
 
 ## Declaring Variables
 
@@ -34,7 +36,7 @@ var (
 
 ## Initializing Variables
 
-You've only declared variables at this point, but there are going to be times when you need them to have an initial value. In Go, this can be done in different ways. For instance, following the same example from above, you could initialize each variable like this:
+You've only declared variables at this point, but there will be times when you need them to have an initial value. In Go, this can be done in different ways. For instance, following the same example from above, you could initialize each variable like this:
 
 ```go
 var (
@@ -76,13 +78,15 @@ func main() {
 }
 ```
 
-Notice that the difference now is that right after you define the variable name, you need to write a colon equal sign (`:=`) and its corresponding value. One important aspect here is that when you use the colon equal sign, **the variable you're declaring has to be a new one**. If you use a colon equal sign, and the variable has been declared already, the program won't compile. Go ahead and give it a try.
+Run the above code to confirm that this way of declaring and initialing variables work.
+
+Notice that the difference now is that you need to write a colon equal sign (`:=`) and its corresponding value right after you define the variable name. One important aspect here is that when you use the colon equal sign, **the variable you're declaring has to be a new one**. If you use a colon equal sign, and the variable has been declared already, the program won't compile. Go ahead and give it a try.
 
 Lastly, **you can only use the colon equal sign inside a function**. When you declare variables outside a function, you must do it using the `var` keyword. No worries if you're not familiar with functions. We'll introduce that in a later unit.
 
 ## Declaring Constants
 
-There will be times when you need to have static values in your code; these are known as constants. Go has support for using constants, and the keyword to declare one is `const`.
+There will be times when you need to have static values in your code, known as constants. Go has support for using constants, and the keyword to declare one is `const`.
 
 For instance, you can declare a constant like this:
 
@@ -111,7 +115,7 @@ Although there are similarities in constants with variables, there are some key 
 
 Something fundamental you need to keep in mind in Go is that when you declare a variable and don't use it, Go throws an error, not a warning like some other programming languages.
 
-For instance, let's go back to one of our previous examples, and remove the `println` call, like this:
+For instance, let's go back to one of our previous examples and remove the `println` call, like this:
 
 ```go
 func main() {
@@ -120,7 +124,7 @@ func main() {
 }
 ```
 
-If you run this code in VS Code or the Go Playground, you'll see that there's an error in the lines where you're declaring the variables and see the following error messages:
+When you run this code in VS Code or the Go Playground, you'll see that there's an error in the lines where you're declaring the variables and see the following error messages:
 
 ```output
 ./main.go:4:2: firstName declared but not used
