@@ -2,19 +2,17 @@
 
 ## Timeline
 
-< TO BE FILLED IN WITH SHANA >
-
 | Item | Owner | Status | Deadline |
 |------|-------|--------|----------|
 | Propose content | @meaghanlewis | Complete | 10/16/2020 |
 | Request art assets | @shanama | Requested | 11/19/2020 |
 | Write Content | @christianhxc | In progress | 11/9/2020|
 | Module 1 content | @christianhxc + @meaghanlewis | Complete | 11/13/2020 |
-| Module 1 content to Aquent | @shanama | Not Started |  |
+| Module 1 content to Aquent | @shanama | Complete | 11/24/2020 |
 | Module 2 content | @christianhxc + @meaghanlewis | In progress | 11/16/2020 |
-| Module 2 content to Aquent | @shanama | Not Started |  |
+| Module 2 content to Aquent | @shanama | Not Started | 12/1/2020 |
 | Module 3 content | @christianhxc + @meaghanlewis | Not started | < DATE > |
-| Module 3 content to Aquent | @shanama | Not Started |  |
+| Module 3 content to Aquent | @shanama | Not Started | 12/8/2020 |
 | Module 4 content | @christianhxc + @meaghanlewis | Not started | < DATE > |
 | Module 4 content to Aquent | @shanama | Not Started |  |
 | Module 5 content | @christianhxc + @meaghanlewis | Not started | < DATE > |
@@ -32,8 +30,6 @@
 | Review Live Content | < YOUR NAME > | Not Started | < DATE > |
 
 ## Content Overview
-
-< Description of content here >
 
 | Type | Title | Description | Duration |
 |------|-------|-------------|----------|
