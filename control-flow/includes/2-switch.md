@@ -31,7 +31,7 @@ func main() {
 }
 ```
 
-Run several times above code, and you'll see a different output every time (If you run it in the Go Playground, you'll get the same result every time, and that's one of the service's limitations).
+Run the code above several times, and you'll see a different output every time (If you run it in the Go Playground, you'll get the same result every time, and that's one of the service's limitations).
 
 Go executes each case of the `switch` statement until it finds a match for the condition. However, notice that the previous code doesn't cover all possible cases of the `num` variable's values. For instance, if `num` ends up being `5`, the program's output will simply be `ok`. Alternatively, you can be more specific about the default use case and include it like this:
 
@@ -48,7 +48,7 @@ default:
 }
 ```
 
-Notice that for the `default` case, you don't write an expression to validate.
+Notice that for the `default` case, you don't write an expression to validate. Instead, you simply include the `i` variable because you'll validate its value in the different `case` statements.
 
 ## Switch with Multiple Expressions
 There will be cases where more than one expression could match only one `case` statement. In Go, if you want to have more than one expression in the same `case` statement, you can separate them with commas (`,`). This allows you to avoid duplicate code.
@@ -167,7 +167,7 @@ Notice that this pattern might be a cleaner way to write long if-then-else chain
 ## Switch Fallthrough
 Unlike other programming languages where you need to write a `break` keyword at the end of every `case` statement, in Go, once the logic falls into one case, it will exit the `switch` block unless you explicitly say so. To fall through to the next immediate case, you need to use the `fallthrough` keyword.
 
-To understand better this pattern, let's use the following code sample:
+To understand this pattern better, let's use the following code sample:
 
 ```go
 package main
