@@ -1,7 +1,9 @@
 # Use Switch Statements
+
 Like other programming languages, Go also has support for `switch` statements. When you need to have several `if` statements chained, a better approach is to use `switch` statements. Not only you'll avoid having too many `if` statements that could make your code harder to read and maintain, but you can also have complicated conditions. We'll give them a look in the below sections.
 
 # Basic Switch Syntax
+
 Like the `if` statement, you don't need parenthesis for the `switch` condition. At its simplest form, a `switch` statement looks like this:
 
 ```go
@@ -51,6 +53,7 @@ default:
 Notice that for the `default` case, you don't write an expression to validate.
 
 ## Switch with Multiple Expressions
+
 There will be cases where more than one expression could match only one `case` statement. In Go, if you want to have more than one expression in the same `case` statement, you can separate them with commas (`,`). This allows you to avoid duplicate code.
 
 Below is a code sample of how you can have multiple expressions:
@@ -84,6 +87,7 @@ func main() {
 Notice that the values you include in the expressions for the `case` statement correspond to the data type of the variable the `switch` statement is validating. If you try to include an integer value as a new `case` statement, the program won't compile.
 
 ## Switch Invoking a Function
+
 A `switch` can also invoke a function, and you can write `case` statements for possible return values from that function. For instance, the below code makes a call to the `time.Now()` function and prints out something depending on the current weekday:
 
 ```go
@@ -137,6 +141,7 @@ func main() {
 Notice that the above `switch` block doesn't have an expression to validate. Let's talk about that in the next section.
 
 ## Omitting Condition
+
 In Go, conditions in a `switch` statement can be omitted altogether, simulating an `if` statement. This pattern is as if you would be comparing a `true` value as if you were forcing the `switch` statement to be executed all the time.
 
 See the below code for a simple example of how to write a `switch` statement without a condition:
@@ -165,6 +170,7 @@ func main() {
 Notice that this pattern might be a cleaner way to write long if-then-else chains.
 
 ## Switch Fallthrough
+
 Unlike other programming languages where you need to write a `break` keyword at the end of every `case` statement, in Go, once the logic falls into one case, it will exit the `switch` block unless you explicitly say so. To fall through to the next immediate case, you need to use the `fallthrough` keyword.
 
 To understand better this pattern, let's use the following code sample:
