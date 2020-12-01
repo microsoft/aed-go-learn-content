@@ -30,7 +30,7 @@ Let's see what else we can do to write loops in Go.
 
 ## Empty Pre and Post Statements (While Loops)
 
-In other programming languages, you usually have the `while` keyword available to write different loop patterns where only the condition expression is required. This is why in Go, the pre and post statements are optional, as you learned in the previous section.
+In other programming languages, you have the `while` keyword available to write different loop patterns where only the condition expression is required. In Go, there is no `while` keyword. This is why the pre and post statements are optional, as you learned in the previous section.
 
 Use the following code snippet to confirm that you can use the `for` loop without pre and post statements:
 
