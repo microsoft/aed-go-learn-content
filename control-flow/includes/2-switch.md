@@ -185,13 +185,13 @@ import (
 func main() {
     switch num := 15; {
     case num < 50:
-        fmt.Printf("%d is lesser than 50\n", num)
+        fmt.Printf("%d is less than 50\n", num)
         fallthrough
     case num > 100:
         fmt.Printf("%d is greater than 100\n", num)
         fallthrough
     case num < 200:
-        fmt.Printf("%d is lesser than 200", num)
+        fmt.Printf("%d is less than 200", num)
     }
 }
 ```
@@ -199,9 +199,9 @@ func main() {
 Run the above code, and analyze the output:
 
 ```output
-15 is lesser than 50
+15 is less than 50
 15 is greater than 100
-15 is lesser than 200
+15 is less than 200
 ```
 
 Do you see anything wrong?
