@@ -192,14 +192,16 @@ And the output should be:
 Version:  1.0
 ```
 
-**Challenge:** What happens if you try to call the `logMessage` variable or the `internalSum` function from the `calculator` package in the main application? Does it run? Give it a try!
+### Challenge 1:
+
+What happens if you try to call the `logMessage` variable or the `internalSum` function from the `calculator` package in the main application? Does it run? Give it a try!
 
 > **Challenge Solution**:
-> ```go
-> package main
-> 
-> import "github.com/myuser/calculator"
-> 
+>```go
+>package main
+>
+>import "github.com/myuser/calculator"
+>
 > func main() {
 >     total := calculator.internalSum(5)
 >     println(total)
