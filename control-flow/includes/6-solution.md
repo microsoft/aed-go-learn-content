@@ -1,7 +1,9 @@
 # Solutions for the Control Flow Challenges
+
 Here you can find one solution for the previous challenges
 
 ## Write a FizzBuzz Program
+
 The solution to this challenge could be something like this:
 
 ```go
@@ -34,6 +36,7 @@ func main() {
 Notice that for the `FizzBuzz` case, we're multiplying 3 by 5 (as that will be divisible by 3 and 5), but you can also include an `AND` condition to check if the number is divisible by 3 and 5.
 
 ## Guess the Square Root
+
 The solution to this challenge could be something like this:
 
 ```go
@@ -65,6 +68,7 @@ func main() {
 Notice that we've included an `if` statement within the loop to stop it if the previous and current numbers are the same. You might need more than 10 calculations for high numbers, so it will be interesting to change the code to use instead of an infinite loop to run a calculation until the previous and current guess are the same. However, you might have a decimal precision problem, so you'll need to use round numbers.
 
 ## Ask a Number, Panic if Negative
+
 The solution to this challenge could be something like this:
 
 ```go

@@ -1,7 +1,9 @@
 # Control Flow Challenges
+
 To put into practice everything you've learned in this module, we have some coding challenges that will help you practice what you've learned. These are not complicated challenges, and we'll give you our solution to each of the challenges. Try to solve them on your own first, and then compare your solution with ours. You can always go back to review the content in case you don't remember something specific.
 
 ## Write a FizzBuzz Program
+
 Write a program that prints the numbers from 1 to 100 and prints out the following:
 
 - `Fizz` if the number is divisible by 3
@@ -12,13 +14,14 @@ Write a program that prints the numbers from 1 to 100 and prints out the followi
 Try to make use of the `switch` statement.
 
 ## Guess the Square Root
+
 Write a program to guess the square root of a number; you could use the formula `sroot = sroot − (sroot − x) / (2 * sroot)` (this is the formula for the [Newton's method](https://en.wikipedia.org/wiki/Newton%27s_method)). 
 
 The more you run the above formula, the close you'll get to find out what the square root value of a number is. You need to initialize the `sroot` variable to 1, regardless of the number you want to find the square root. **Repeat the calculation 10 times**, and print each guess. 
 
 Additionally, you might need **less than 10 calculations**, so stop the loop when you get the same result from a previous run. The higher the number is, the more calculations you need to run, but let's leave to only 10.
 
-For instance, if the input number is '25`, the out should be like this:
+For instance, if the input number is `25`, the output should look like this:
 
 ```output
 A guess for square root is  13
@@ -32,6 +35,7 @@ Square root is: 5
 ```
 
 ## Ask a Number, Panic if Negative
+
 Write a program that asks for a number from a user. To do so, you can use the following code snippet as a starting point:
 
 ```go

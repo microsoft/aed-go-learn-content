@@ -1,9 +1,11 @@
 # Use If/Else Statements
+
 The most basic control flow in any programming language is the `if/else` statement. In Go, these statements are pretty straightforward. However, there are a few nuances that you need to know before you start getting to feel comfortable writing Go programs.
 
 Let's see how the syntax in Go looks like for `if` statements.
 
 ## If Statement Syntax
+
 Unlike other programming languages, in Go, you **don't need parentheses in conditions**, and the `else` clause is optional. However, braces are still required. Moreover, Go doesn't offer support for [ternary if statements](http://en.wikipedia.org/wiki/%3F:) to reduce lines, so you need to write the full `if` statement every time.
 
 A basic example of an `if` statement looks like this
@@ -24,6 +26,7 @@ func main() {
 When you're using VS Code, if you forget that in Go, you omit the parentheses in conditions; when you save your program VS Code removes them automatically.
 
 ## Compound If Statements
+
 When you need to write more complex `if` statements, Go has support to compound `if` statements. You can nest statements using the `else if` statement, like this:
 
 ```go
