@@ -1,4 +1,4 @@
-# Control Flow Challenge
+# Control Flow Challenges
 
 To put into practice everything you've learned in this module, we have some coding challenges that will help you practice what you've learned. These are not complicated challenges, and we'll give you our solution to each of the challenges. Try to solve them on your own first, and then compare your solution with ours. You can always go back to review the content in case you don't remember something specific.
 
