@@ -68,17 +68,6 @@ quiz:
     - content: "To change variable values from the function caller."
       isCorrect: true
       explanation: "Explanation3"
-  - content: "How many return values a function can have?"
-    choices:
-    - content: "Only one return value."
-      isCorrect: false
-      explanation: "Explanation 1"
-    - content: "Zero to many."
-      isCorrect: true
-      explanation: "Explanation2"
-    - content: "No more than two values."
-      isCorrect: false
-      explanation: "Explanation3"
   - content: "How do you differentiate between a package and a standalone application?"
     choices:
     - content: "A standalone application uses the package main, and a package (library) use a different name."

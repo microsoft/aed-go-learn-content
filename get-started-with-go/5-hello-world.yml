@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Hello World
-durationInMinutes: 5
+durationInMinutes: 6
 content: |
   [!include[](includes/5-hello-world.md)]

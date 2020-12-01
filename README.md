@@ -2,19 +2,17 @@
 
 ## Timeline
 
-< TO BE FILLED IN WITH SHANA >
-
 | Item | Owner | Status | Deadline |
 |------|-------|--------|----------|
 | Propose content | @meaghanlewis | Complete | 10/16/2020 |
 | Request art assets | @shanama | Requested | 11/19/2020 |
 | Write Content | @christianhxc | In progress | 11/9/2020|
 | Module 1 content | @christianhxc + @meaghanlewis | Complete | 11/13/2020 |
-| Module 1 content to Aquent | @shanama | Not Started |  |
+| Module 1 content to Aquent | @shanama | Complete | 11/24/2020 |
 | Module 2 content | @christianhxc + @meaghanlewis | In progress | 11/16/2020 |
-| Module 2 content to Aquent | @shanama | Not Started |  |
+| Module 2 content to Aquent | @shanama | Not Started | 12/1/2020 |
 | Module 3 content | @christianhxc + @meaghanlewis | Not started | < DATE > |
-| Module 3 content to Aquent | @shanama | Not Started |  |
+| Module 3 content to Aquent | @shanama | Not Started | 12/8/2020 |
 | Module 4 content | @christianhxc + @meaghanlewis | Not started | < DATE > |
 | Module 4 content to Aquent | @shanama | Not Started |  |
 | Module 5 content | @christianhxc + @meaghanlewis | Not started | < DATE > |
@@ -33,15 +31,13 @@
 
 ## Content Overview
 
-< Description of content here >
-
 | Type | Title | Description | Duration |
 |------|-------|-------------|----------|
 | Learning Path | Take your first steps with Go development | Learn how to program using Go. | ~6 hours |
-| Module | Get started with Go | In this module, you’ll start taking your first steps with Go. | 45 min |
-| Module | Understand how to use packages, variables, functions | Learn about basic data types and how to use variables, functions, and packages in Go programs. | 45 min |
+| Module | Get started with Go | In this module, you’ll start taking your first steps with Go. | 25 min |
+| Module | Understand how to use packages, variables, and functions | Learn about basic data types and how to use variables, functions, and packages in Go programs. | 35 min |
 | Module | Iterate through code with flow control statements | Learn how to use different statements and loops in Go programs. | 45 min |
-| Module | Use data types and structs | Learn more about the data types that Go has available. | 45 min |
+| Module | Use data types | Learn more about the data types that Go has available. | 45 min |
 | Module | Implement error handling and logging | Understand how to handle errors and log helpful messages in your Go programs. | 45 min |
 | Module | Use methods and interfaces | Learn about best practices for methods in interfaces in Go. | 45 min |
 | Module | Learn how concurrency works in Go | Understand more about concurrency, one of the most unique features in Go. | 45 min |

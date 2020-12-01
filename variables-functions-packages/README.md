@@ -3,7 +3,7 @@
 Please fill out the below info to help us keep your module organized properly.
 
 Module Title:  
-< TITLE >
+Understand how to use packages, variables, and functions
 
 Unit Titles:  
 - Introduction

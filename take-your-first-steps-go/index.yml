@@ -4,7 +4,7 @@
 uid: 
 metadata:
   title: Take your first steps with Go
-  description: # Add a short description of your learning path for search engines.
+  description: Learn how to program using Go.
   brand: 
   ms.date: 
   author: meaghanlewis
@@ -12,18 +12,25 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Take your first steps with Go
-summary: | # Add a description for your learning path to be displayed to users in the given form. Can include the description from above.
-  <Short description of your learning path> 
+summary: | 
+  Learn how to program using Go. 
 
   In this learning path you will:
     - Install and configure Go in your local workstation
     - Install and configure VS Code and the Go extension
     - Explore the Go Playground
-    - Create your first Go application
+    - Understand how to use variables, functions, and packages
+    - Iterate through code with flow control statements
+    - Learn about and use data types like structs, arrays, slices and maps
+    - Implement error handling and logging
+    - Use methods and interfaces
+    - Learn about how concurrency works
+    - Write and test a complete Go program
 
-prerequisites: | # Fill in a detailed list of prerequisites in this form
-#  - prereq 1
-#  - prereq 2
+prerequisites: |
+  - A Windows, Mac, or Linux computer
+  - Knowledge of programming basics
+  - Know how to download and install software from the internet
 iconUrl: /learn/achievements/generic-trophy.svg # TODO change
 levels:
 - beginner
@@ -33,7 +40,13 @@ roles:
 products:
 - 
 modules:
-- 
-- 
+- get-started-with-go
+- variables-functions-packages
+- control-flow
+- data-types
+- error-handling-logging
+- methods-interfaces
+- concurrency
+- write-test-program
 trophy:
   uid: 

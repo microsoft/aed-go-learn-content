@@ -13,8 +13,8 @@ In this module, you will:
 - Explore the Go Playground
 - Create your first Go application
 
-
 ## Prerequisites
+
 - Programming basics in general
 - Knowledge with at least one programming language
 - Download / Install Software from the Internet
