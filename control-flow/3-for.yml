@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: 
 metadata:
-  title: Exercise - Use switch statements
+  title: Exercise - Use for loops
   description: 
   ms.date: 
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Exercise - Use switch statements
+title: Exercise - Use for loops
 durationInMinutes:
 content: |
-  [!include[](includes/3-switch.md)]
+  [!include[](includes/3-for.md)]
