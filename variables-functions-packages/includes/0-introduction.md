@@ -15,6 +15,7 @@ In this module, you will:
 
 ## Prerequisites
 
-- A Go environment ready to create applications. Ideally, you should have installed and configured Go locally and [VS Code](https://code.visualstudio.com/download) with the [Go extension](https://marketplace.visualstudio.com/items?itemName=golang.Go) installed. Alternatively, you could use the [Go Playground](https://play.golang.org/).
-- Able to create and modify `.go` files
-- Able to run Go applications using the terminal prompt
+- A Go environment ready to create applications.
+- [VS Code](https://code.visualstudio.com/download) with the [Go extension](https://marketplace.visualstudio.com/items?itemName=golang.Go) installed. Alternatively, you could use the [Go Playground](https://play.golang.org/).
+- Know how to create and modify `.go` files
+- Know how to run Go applications using the terminal
