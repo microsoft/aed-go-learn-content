@@ -9,20 +9,20 @@
 | Write Content | @christianhxc | In progress | 11/9/2020|
 | Module 1 content | @christianhxc + @meaghanlewis | Complete | 11/13/2020 |
 | Module 1 content to Aquent | @shanama | Complete | 11/24/2020 |
-| Module 2 content | @christianhxc + @meaghanlewis | In progress | 11/16/2020 |
-| Module 2 content to Aquent | @shanama | Not Started | 12/1/2020 |
-| Module 3 content | @christianhxc + @meaghanlewis | Not started | < DATE > |
+| Module 2 content | @christianhxc + @meaghanlewis | Complete | 11/16/2020 |
+| Module 2 content to Aquent | @shanama | Complete | 12/1/2020 |
+| Module 3 content | @christianhxc + @meaghanlewis | Complete| 12/4/2020 |
 | Module 3 content to Aquent | @shanama | Not Started | 12/8/2020 |
-| Module 4 content | @christianhxc + @meaghanlewis | Not started | < DATE > |
-| Module 4 content to Aquent | @shanama | Not Started |  |
-| Module 5 content | @christianhxc + @meaghanlewis | Not started | < DATE > |
-| Module 5 content to Aquent | @shanama | Not Started |  |
+| Module 4 content | @christianhxc + @meaghanlewis | In progress | 12/11/2020 |
+| Module 4 content to Aquent | @shanama | Not Started | 12/15/2020 |
+| Module 5 content | @christianhxc + @meaghanlewis | Not started | 12/18/2020 |
+| Module 5 content to Aquent | @shanama | Not Started | 1/5/2020 |
 | Module 6 content | @christianhxc + @meaghanlewis | Not started | < DATE > |
-| Module 6 content to Aquent | @shanama | Not Started |  |
+| Module 6 content to Aquent | @shanama | Not Started | 1/12/2020 |
 | Module 7 content | @christianhxc + @meaghanlewis | Not started | < DATE > |
-| Module 7 content to Aquent | @shanama | Not Started |  |
-| Module 8 content | @christianhxc + @meaghanlewis | Not started | < DATE > |
-| Module 8 content to Aquent | @shanama | Not Started |  |
+| Module 7 content to Aquent | @shanama | Not Started | 1/19/2020 |
+| Module 8 content | @christianhxc + @meaghanlewis | Not started | |
+| Module 8 content to Aquent | @shanama | Not Started | 1/26/2020 |
 | Review Content | @meaghanlewis | Not Started | < DATE > |
 | Content Draft on Learn | Aquent | Not Started | < DATE > |
 | Sign off on Content on Learn | @meaghanlewis | Not Started | < DATE > |
