@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: 
 metadata:
-  title: Solution - 
-  description: 
+  title: Solution - Control Flow Challenge
+  description: Check your solutions to the control flow challenge.
   ms.date: 
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Solution - 
-durationInMinutes:
+title: Solution - Control Flow Challenge
+durationInMinutes: 4
 content: |
   [!include[](includes/6-solution.md)]

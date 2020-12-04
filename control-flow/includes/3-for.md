@@ -6,7 +6,7 @@ Another common control flow is a loop. In Go, there's only one looping construct
 
 Similar to the `if` and `switch` statements, in `for` loops statements, you don't need to use parenthesis for the expressions, but the braces are required.
 
-There are three components in the `for` loop that is separated by semicolons (`;`):
+There are three components in the `for` loop that are separated by semicolons (`;`):
 
 - An initial statement that is executed before the first iteration (optional)
 - A condition expression that is evaluated before every iteration (the loop stops when this is `false`)

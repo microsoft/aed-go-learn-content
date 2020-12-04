@@ -1,4 +1,4 @@
-# Solutions for the Control Flow Challenges
+# Solution - Control Flow Challenge
 
 Here you can find one solution for the previous challenges
 

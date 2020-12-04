@@ -1,4 +1,4 @@
-# Defer, Panic, and Recover
+# Use defer, panic, and recover
 
 To close this module, we're going to cover less common control flows in Go: `defer`, `panic`, and `recover`. As we've said since the beginning, Go is idiomatic in several aspects, and these three functions are the proof of that. There are several use cases for each of these functions, but we'll only cover the most important ones while we explain them.
 

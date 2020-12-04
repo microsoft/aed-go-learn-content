@@ -2,7 +2,7 @@
 
 Like other programming languages, Go also has support for `switch` statements. When you need to have several `if` statements chained, a better approach is to use `switch` statements. Not only you'll avoid having too many `if` statements that could make your code harder to read and maintain, but you can also have complicated conditions. We'll give them a look in the below sections.
 
-# Basic Switch Syntax
+## Basic Switch Syntax
 
 Like the `if` statement, you don't need parenthesis for the `switch` condition. At its simplest form, a `switch` statement looks like this:
 
@@ -110,7 +110,7 @@ func main() {
 }
 ```
 
-When you're calling a function from a `switch` statement, you can modify its logic without having to change the expression as you'll always validate what the function returns. 
+When you're calling a function from a `switch` statement, you can modify its logic without having to change the expression as you'll always validate what the function returns.
 
 Also, you can call a function from a `case` statement. For instance, when you want to match a particular pattern by using a regular expression, like this:
 

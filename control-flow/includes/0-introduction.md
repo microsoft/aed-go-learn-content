@@ -8,7 +8,8 @@ Almost at the end of the module, you'll find a challenge where you need to apply
 
 ## Learning Objectives
 
-In this module, you will: 
+In this module, you will:
+
 - Learn about simple and compound `if` statements
 - Learn about `switch` statements and its different features
 - Learn about loop statements and its patterns in Go using the `for` keyword
@@ -17,7 +18,7 @@ In this module, you will:
 ## Prerequisites
 
 - A Go environment ready to create applications. Ideally, you should have installed and configured Go locally and VS Code with the Go extension installed. Alternatively, you could use the Go Playground.
-- Able to create and modify `.go` files
-- Able to run Go applications using the terminal prompt
+- Know how to create and modify `.go` files
+- Know how run Go applications using the terminal prompt
 - Know how to declare and initialize variables
 - Know how to create functions

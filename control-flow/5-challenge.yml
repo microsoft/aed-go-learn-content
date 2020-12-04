@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: 
 metadata:
-  title: Challenge - 
-  description: 
+  title: Challenge - Control Flow 
+  description: Practice what you've learned about control flow statements
   ms.date: 
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Challenge - 
-durationInMinutes:
+title: Challenge - Control Flow
+durationInMinutes: 10
 content: |
   [!include[](includes/5-challenge.md)]

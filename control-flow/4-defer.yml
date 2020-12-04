@@ -2,13 +2,13 @@
 uid: 
 metadata:
   title: Exercise - Use a defer statement
-  description: 
+  description: Learn about less common control flows in Go - defer, panic, and recover.
   ms.date: 
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: DExercise - Use a defer statement
-durationInMinutes:
+title: Exercise - Use defer, panic, and recover
+durationInMinutes: 7
 content: |
   [!include[](includes/4-defer.md)]
