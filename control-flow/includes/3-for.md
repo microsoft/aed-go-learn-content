@@ -14,7 +14,7 @@ There are three components in the `for` loop that are separated by semicolons (`
 
 As you can see, the above is very similar to a `for` loop in other programming languages like C, Java, or C#.
 
-So, at its simplest form, a foor loop in Go looks like this:
+So, at its simplest form, a for loop in Go looks like this:
 
 ```go
 func main() {

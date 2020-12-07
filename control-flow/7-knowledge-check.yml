@@ -17,60 +17,37 @@ quiz:
   questions:
   - content: "Can you use variables declared within an `if` statement outside of the `if` statement?"
     choices:
-    - content: "Yes, variables are global."
+    - content: "Yes, because variables are global."
       isCorrect: false
       explanation: "No, these variables' scope are only available within an `if` block."
     - content: "No, the variable scope works only within the `if` block or nested `if` statements."
       isCorrect: true
-      explanation: "Correct, you can't use those variables outside of the `if` block, and you can even declare the same variables somewhere else."
+      explanation: "Correct, you can't use those variables outside of the `if` block."
     - content: "Yes, as long as you use it within the function."
       isCorrect: false
       explanation: "No, you can only use those variables within the `if` block."
     - content: "No, you have to declare a variable outside of an `if` statement."
       isCorrect: false
-      explanation: "Not necessarily, in Go you don't have to declare a variable before you can use it in an `if` block."
+      explanation: "Not necessarily. In Go you don't have to declare a variable before you can use it in an `if` block."
   - content: "Do you need to include a `break` keyword at the end of every `case` statement in a `switch` block?"
     choices:
     - content: "No, Go doesn't require you to include the `break` keyword."
       isCorrect: true
-      explanation: "Correct, by default, Go will stop the `switch` statement when finishing a `case` block."
+      explanation: "Correct. By default, Go will stop the `switch` statement when finishing a `case` block."
     - content: "Yes, otherwise the following `case` statements will be evaluated."
       isCorrect: false
-      explanation: "No, by default, Go will stop the `switch` statement when finishing a `case` block."
+      explanation: "No. By default, Go will stop the `switch` statement when finishing a `case` block."
     - content: "No, doesn't have support for the `break` keyword."
       isCorrect: false
       explanation: "Go does have support for the `break` statement, but by default, Go will stop the `switch` statement when finishing a `case` block.."
-  - content: "How many times can a `defer` function be called within a function?"
-    choices:
-    - content: "You can call the `defer` function only once."
-      isCorrect: false
-      explanation: "You can call the `defer` function as many times as you want/need to."
-    - content: "Yes, every call is queued, and they run in a last-in-first-out way.."
-      isCorrect: true
-      explanation: "Correct, you can call the `defer` function as many times as you want/need to, and the execution order will be last-in-first-out."
-    - content: "You can call the defer function more than once but it will only run one time."
-      isCorrect: false
-      explanation: "You can call the `defer` function as many times as you want/need to, and the execution order will be last-in-first-out."
-  - content: "What does the `panic()` function cause?"
+  - content: "What does the `panic()` function do in Go?"
     choices:
     - content: "Throws an error that you need to catch; otherwise, the program crashes without any error."
       isCorrect: false
-      explanation: "No, then `panic` function makes the program to crash and prints out the error and its details, you don't necessarily have to `catch` the error to see it."
+      explanation: "No, the `panic` function makes the program to crash and prints out the error and its details, you don't necessarily have to `catch` the error to see it."
     - content: "Prints out a panic message to the console."
       isCorrect: false
-      explanation: "Yes, but it also makes the program crash."
-    - content: "Crash a program and prints out the error message and its stack trace."
+      explanation: "It prints out a panic message and also makes the program crash."
+    - content: "Crashes a program and prints out the error message and its stack trace."
       isCorrect: true
-      explanation: "Correct, you can use this function when you explicitly want to make the program to stop running and print out the error and its details."
-  - content: "Can the `recover()` function be called anywhere in your code?"
-    choices:
-    - content: "No, it only works if a panic statement was executed before."
-      isCorrect: false
-      explanation: "Not necessarily, but the idea is to be able to 'recover' a program that is panicking. Otherwise, you'll get a `nil` response back."
-    - content: "Yes, but it only makes sense to call it from a deferred function to catch a panic execution."
-      isCorrect: true
-      explanation: "Correct, but if you don't call it within a deferred function you'll get a `nil` response back."
-    - content: "Yes, but it will return `nil` unless your program panics."
-      isCorrect: false
-      explanation: "Yes, but you need to remember that if you don't include the call to this function in a deferred function, you get a `nil` response back."      
-  
+      explanation: "Correct, you can use this function when you explicitly want to make the program stop running and print out the error and its details."
