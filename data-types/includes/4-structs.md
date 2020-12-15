@@ -37,9 +37,9 @@ Notice that you have to specify a value for each of the fields from the struct. 
 employee := Employee{LastName: "Doe", FirstName: "John"}
 ```
 
-Notice that from the previous statement, the order you assign values to each field doesn't matter. Moreover, it doesn't matter if you don't specify a value for any other field (Go will assign its default value depending on the field data type).
+Notice that from the previous statement, the order you assign values to each field doesn't matter. Moreover, it doesn't matter if you don't specify a value for any other field (Go will assign a default value depending on the field data type).
 
-To access individual fields of a struct, you can do it by using the dot notation, like this:
+To access individual fields of a struct, you can do it by using the dot notation (`.`), like this:
 
 ```go
 employee.ID = 1001
@@ -157,7 +157,7 @@ Notice how you access the `FirstName` field from an `Employee` struct without ha
 
 Finally, you can use structs to encode and decode data in JSON. Go has excellent support for the JSON format, and it's already included in the standard library packages.
 
-You can also do things like renaming the name of a field when the one from the struct is not appropriate. For instance, let's say that you don't want the JSON output to show `FirstName` but simply `name` or ignore empty fields. You could use field tags like this:
+You can also do things like rename the name of a field from the struct. For instance, let's say that you don't want the JSON output to show `FirstName` but simply `name` or ignore empty fields. You could use field tags like this:
 
 ```go
 type Person struct {
