@@ -8,7 +8,7 @@ A typical programming exercise is to write a program to calculate the Fibonacci 
 
 Remember, the Fibonacci sequence is a list of numbers where each number is the sum of the previous Fibonacci numbers. For instance, the sequence numbers for `6` is `1,1,2,3,5,8`, for `7` is `1,1,2,3,5,8,13`, for `8` is `1,1,2,3,5,8,13,21`, son on and so forth.
 
-## Roman numberals translator
+## Roman numerals translator
 
 Write a program that translates a Roman numeral like `MCLX` to `1,160`. Use a map to load the basic Roman numerals that you'll use to translate a string character into a number. For instance, `M` will be a key in the map, and its value will be `1000`. Use the following string character map list:
 
