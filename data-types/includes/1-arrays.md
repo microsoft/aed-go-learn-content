@@ -99,6 +99,14 @@ func main() {
 }
 ```
 
+Run this code, and you'll get the output:
+
+```output
+First Position: 0
+Last Position: -1
+Length: 100
+```
+
 Notice how the array length is 100 because you specified a value for the 99th position, and the first position prints out the default value (zero).
 
 ## Multi-dimensional arrays
