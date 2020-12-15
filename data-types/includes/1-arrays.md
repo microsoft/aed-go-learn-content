@@ -1,7 +1,9 @@
 # Arrays
+
 Arrays in Go are a fixed-length data structure of a particular type. They can have zero or more elements, you have to define the size when you declare or initialize them, and **you can't resize them once created**. Therefore, arrays are not commonly used in Go programs, but they're the foundation for slices and maps.
 
-## Declare an Array
+## Declare arrays
+
 To declare an array in Go, you have to define the data type of its elements and the number of elements the array can hold. You can then access each element in the array with the subscript notation where zero it's the first element, and the last element is one less than the array length (length - 1).
 
 For instance, let's use the following code:
@@ -30,7 +32,8 @@ When you run the above code, you get the following output:
 
 Notice that even though you simply declared an array, you don't get an error when accessing its elements. By default, Go initializes each element with the default data type. In this case, the default value for `int` is zero. But you can assign a value to a specific position, that's why you see `a[1] = 10`, and you can access that element using the same notation. Also, notice that to print out the first element, we used `a[0]`, and for the last one, we used `a[len(a)-1]`. `len` is a built-in function in Go to get the number of elements in an array, slice, or map.
 
-## Initialize an Array
+## Initialize arrays
+
 You can also initialize an array with other values than the default ones when you're declaring an array. For instance, you can use the following code to see and test the syntax:
 
 ```go
@@ -52,7 +55,8 @@ Cities: [New York Paris Berlin Madrid ]
 
 Notice that even though the array should have five elements, we don't need to assign a value to all elements. As we've seen before, the latest position has an empty string because it's the default value for a string data type.
 
-## Elipsis in Arrays
+## Ellipsis in Arrays
+
 Another way of declaring and initializing an array when you don't know how many positions you'll need, but you know how many data you'll have, you can use an ellipsis (`...`), like this:
 
 ```go
@@ -97,7 +101,8 @@ func main() {
 
 Notice how the array length is 100 because you specified a value for the 99th position, and the first position prints out the default value (zero).
 
-## Multi-Dimensional Arrays
+## Multi-dimensional arrays
+
 Go has support for multi-dimensional arrays when you need to work with complex data structures. Let's create a program where you declare and initialize a two-dimensional array. Use the following code:
 
 ```go

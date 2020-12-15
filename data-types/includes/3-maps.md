@@ -1,7 +1,9 @@
 # Maps
-A map in Go is basically a hash table, which is a collection of key/value pairs items. All keys in a map have to be of the same type, as well as the values. However, you can use different types for keys and values. For instance, keys could be numbers, and the values could be strings. To access a particular item in a map, you do it by referencing its key. 
 
-## Declaring and Initializing a Map
+A map in Go is basically a hash table, which is a collection of key/value pairs items. All keys in a map have to be of the same type, as well as the values. However, you can use different types for keys and values. For instance, keys could be numbers, and the values could be strings. To access a particular item in a map, you do it by referencing its key.
+
+## Declaring and initializing a map
+
 To declare a map, you need to use the `map` keyword, and then you define the key and value type, like this `map[T]T`. For instance, if you would like to create a map that contains the age of students, you can use the following code:
 
 ```go
@@ -32,7 +34,8 @@ studentsAge := make(map[string]int)
 
 Maps are dynamic. You can add, access, or remove items after creating them. Let's explore those actions.
 
-## Adding Items
+## Adding items
+
 To add items, you don't need to use a built-in function as you do with slices. Maps are more straightforward, and you only need to define a key and a value. If the pair doesn't exist, the item is added to the map.
 
 Let's rewrite the code we used previously to create a map using the `make` function and then adding items to the map. You could use the following code:
@@ -84,7 +87,8 @@ exit status 2
 
 To avoid having problems when adding items into a map, make sure you create an empty map (not a `nil` map) using the `make` function as we showed in the previous code snippet. However, this rule only applies when adding items. If you run lookups, deletes, or loops operations in a `nil` map, Go won't panic–we'll confirm that in a moment.
 
-## Accessing Items
+## Accessing items
+
 To access items in a map, you use the usual subscript notation `m[key]`, as you do with arrays or slices. Here's a simple example of how to access an item:
 
 ```go
@@ -152,7 +156,8 @@ Christy's age couldn't be found
 
 Use the previous approach when you need to check if a key in a map exists before accessing it.
 
-## Removing Items
+## Removing items
+
 To remove an item from a map, you can use the built-in `delete()` function. Here's an example of how to remove items from a map:
 
 ```go
@@ -197,7 +202,8 @@ When you run the above code, you don't get an error, and the output is the follo
 map[bob:31 john:32]
 ```
 
-## Looping in a Map
+## Looping in a map
+
 Lastly, let's see how you can loop in a map to access all its items programmatically. To do so, you can use the range-based loop, like this:
 
 ```go

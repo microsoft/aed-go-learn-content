@@ -1,4 +1,5 @@
 # Summary
+
 In this module, you learned four data types that will help you better represent the data your programs will use to solve a problem. We started exploring arrays in Go, which, as you noticed they're effortless, and if you've been programming in another language, they're not too different. However, the devil is in the details as you needed to learn how arrays work to understand the other three data types we explored.
 
 For instance, you learned that a slice is a simple data structure with a pointer to an underlying array and two properties to control the length and the capacity of that array. You don't have to worry about a slice's size because Go takes care of "expanding" the size of the underlying array for you. Additionally, you learned that the slice operator helps you create new sub slices and remove elements from a slice.

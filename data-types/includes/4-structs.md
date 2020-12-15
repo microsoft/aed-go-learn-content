@@ -1,11 +1,13 @@
 # Structs
+
 There are times when you need to represent a collection of fields in one structure. For instance, when you need to write a payroll program, you need to use an employee data structure. In Go, you can use structs to group together different fields that could form a record.
 
 A *struct* in Go is **another data type** that could contain zero or more fields of arbitrary types and represent them as a single entity.
 
 In this section, we'll explore why structs are essential and how to use them.
 
-## Declaring and Initializing a Struct
+## Declaring and initializing a struct
+
 To declare a struct, you need to use the `struct` keyword, along with the list of fields and their type that you'd like your new data type to have. For instance, to define an employee struct, you could use the following code:
 
 ```go
@@ -76,7 +78,8 @@ When you run the above code, you see the following output:
 
 Notice how the struct becomes mutable when you use pointers.
 
-## Struct Embedding
+## Struct embedding
+
 Structs in Go allows you to embed another struct within a struct. There are going to be times where you'd like to reduce repetition and reuse a common struct. For example, let's say that you'd like to refactor the previous code to have a data type for an Employee and another one for a Contractor. You could have a `Person` struct that holds common fields, like this:
 
 ```go
@@ -150,8 +153,9 @@ func main() {
 
 Notice how you access the `FirstName` field from an `Employee` struct without having to specify the `Person` field because it's embedding all its fields automatically. However, when you're initializing a struct, you have to be specific about which field you want to assign a value to.
 
-## Encoding and Decoding Structs with JSON
-Finally, you can use structs to encode and decode data in JSON. Go has excellent support for the JSON format, and it's already included in the standard library packages. 
+## Encoding and decoding structs with JSON
+
+Finally, you can use structs to encode and decode data in JSON. Go has excellent support for the JSON format, and it's already included in the standard library packages.
 
 You can also do things like renaming the name of a field when the one from the struct is not appropriate. For instance, let's say that you don't want the JSON output to show `FirstName` but simply `name` or ignore empty fields. You could use field tags like this:
 

@@ -1,7 +1,9 @@
-# Solutions for the Data Type Challenges
+# Solutions - Data Types Challenge
+
 Here you can find one solution for the previous challenges.
 
-## Fibonacci Sequence
+## Fibonacci sequence
+
 The solution to this challenge could be something like this:
 
 ```go
