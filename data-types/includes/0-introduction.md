@@ -1,16 +1,16 @@
 # Introduction
 
-In previous modules, we covered the basic types in Go that serve as the foundation for building data structures in a Go program. In this module, we will cover the aggregate types we mentioned early: arrays and slices. You'll learn its differences and when to use one type versus the other one. Additionally, we'll cover maps and structs, which are also the foundation for manipulating data using Go and used for many web services.
+In previous modules, we covered the basic types in Go that serve as the foundation for building data structures in a Go program. In this module, we will cover the aggregate types we mentioned earlier: arrays and slices. You'll learn the differences between the two and when to use one type versus the other one. Additionally, we'll cover maps and structs, which are also the foundation for manipulating data using Go and used for many web services.
 
-Lastly, when we talk about structs, you'll learn how to build custom and complex data types, which will be useful when parsing JSON payloads.
+Lastly, you'll learn how to build custom and complex data types, which will be useful when parsing JSON payloads.
 
 ## Learning objectives
 
 In this module, you will learn about:
 
 - The aggregate types in Go: arrays and slices
-- The difference between arrays and slices
-- Built-in functions in Go to manipulate data
+- The differences between arrays and slices
+- Built-in functions to manipulate data
 - How to use key/value data structures using maps
 - How to write complex custom data types with structs
 
