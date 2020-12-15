@@ -85,7 +85,7 @@ main.main()
 exit status 2
 ```
 
-To avoid having problems when adding items into a map, make sure you create an empty map (not a `nil` map) using the `make` function as we showed in the previous code snippet. However, this rule only applies when adding items. If you run lookups, deletes, or loops operations in a `nil` map, Go won't panic–we'll confirm that in a moment.
+To avoid having problems when adding items into a map, make sure you create an empty map (not a `nil` map) using the `make` function as we showed in the previous code snippet. However, this rule only applies when adding items. If you run lookups, deletes, or loop operations in a `nil` map, Go won't panic. We'll confirm that in a moment.
 
 ## Accessing items
 
@@ -125,9 +125,9 @@ When you run the above code, you see the following output:
 Christy's age is 0
 ```
 
-Although, in many cases, it's fair that Go doesn't return an error when accessing an item that doesn't exist in a map, there are times where you need to know if an item exists or not. In Go, the subscript notation for a map can yield two values. The first one would be the value of an item, and the second one, it's a boolean flag that indicates if the key exists or not.
+Although, in many cases, it's fair that Go doesn't return an error when accessing an item that doesn't exist in a map, there are times where you need to know if an item exists or not. In Go, the subscript notation for a map can yield two values. The first one would be the value of an item, and the second one, is a boolean flag that indicates if the key exists or not.
 
-To fix the previous problem, you could use the following code:
+To fix the problem with the last code snippet, you could do the following:
 
 ```go
 package main
@@ -154,7 +154,7 @@ When you run the above code, you see the following output:
 Christy's age couldn't be found
 ```
 
-Use the previous approach when you need to check if a key in a map exists before accessing it.
+Use the second code snippet when you need to check if a key in a map exists before accessing it.
 
 ## Removing items
 
@@ -174,7 +174,7 @@ func main() {
 }
 ```
 
-When you run the above code, you get the following output:
+When you run the code, you get the following output:
 
 ```output
 map[bob:31]
@@ -196,7 +196,7 @@ func main() {
 }
 ```
 
-When you run the above code, you don't get an error, and the output is the following:
+When you run the code, you don't get an error, and the output is the following:
 
 ```output
 map[bob:31 john:32]
