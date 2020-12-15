@@ -36,7 +36,8 @@ func main() {
 
 ```
 
-## Roman Numbers Translator
+## Roman numerals translator
+
 The solution to this challenge could be something like this:
 
 ```go
@@ -63,7 +64,7 @@ func romanToArabic(numeral string) int {
 		if val, present := romanMap[digit]; present {
 			arabicVals[index] = val
 		} else {
-			fmt.Printf("Error: The roman number %s has a bad digit: %c\n", numeral, digit)
+			fmt.Printf("Error: The roman numeral %s has a bad digit: %c\n", numeral, digit)
 			return 0
 		}
 	}
