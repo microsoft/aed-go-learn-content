@@ -1,16 +1,16 @@
 # Slices
 
-We explored arrays in the previous section, and we said that arrays are the foundation for slices and maps. You'll understand why in a moment. Like arrays, a slice is a data type in Go to represent a sequence of elements that have the same type. But the more significant difference between arrays is that the size of a slice is dynamic, not fixed.
+We explored arrays in the previous section, and we said that arrays are the foundation for slices and maps. You'll understand why in a moment. Like arrays, a slice is a data type in Go to represent a sequence of elements that have the same type. But the more significant difference with arrays is that the size of a slice is dynamic, not fixed.
 
 A slice is simply a data structure on top of an array known as the *underlying array*. Therefore, with a slice, you can either have **access to the whole underlying array or only to a subsequence of elements**.
 
 A slice has only three components:
 
-- A **pointer** to the first element reachable of the underlying array (not necessarily the array's first element)
-- A **length** that indicates the number of elements in the slice
-- A **capacity** that shows the number of elements between the start of a slice and the end of the underlying array
+- A **pointer** to the first element reachable of the underlying array (not necessarily the array's first element).
+- A **length** that indicates the number of elements in the slice.
+- A **capacity** that shows the number of elements between the start of a slice and the end of the underlying array.
 
-The below image represents what a slice is:
+The image below represents what a slice is:
 
 :::image type="content" source="media\go-slices.jpg" alt-text="Image showing how slices in Go look":::
 
@@ -18,7 +18,7 @@ Notice how the slice is only a subset of the underlying array. Let's see how you
 
 ## Declaring and initializing a slice
 
-To declare a slice, you do it in the same way you declare an array. For instance, the following code represents what you saw in the previous image:
+To declare a slice, you do it in the same way you declare an array. For instance, the following code represents what you saw in the slice image:
 
 ```go
 package main
@@ -33,7 +33,7 @@ func main() {
 }
 ```
 
-When you run the previous code, you see the following output:
+When you run the code, you see the following output:
 
 ```output
 [January February March April May June July August September October November December]
@@ -47,11 +47,11 @@ Notice how, at the moment, a slice doesn't differ too much from an array; you de
 
 Go has support for the slice operator `s[i:j]`, where `s` represents the array, `i` represents the pointer to the first element of the array (or another slice) that will use, and `j` that represents in which position is the last element the slice will use. In other words, a slice can refer only to a subset of elements.
 
-For instance, let's say that you'd like to have four variables representing each quarter of the year. The following image illustrates how that would look like in Go:
+For instance, let's say that you'd like to have four variables representing each quarter of the year. The following image illustrates how that looks in Go:
 
 :::image type="content" source="media\go-slices-multiple.jpg" alt-text="Image showing how multiple Slices in Go look like":::
 
-To represent in code what you saw in the previous image, you could use the following code:
+To represent in code what you saw in the image above, you could use the following code:
 
 ```go
 package main
@@ -71,7 +71,7 @@ func main() {
 }
 ```
 
-When you run the previous code, you get the following output:
+When you run the code, you get the following output:
 
 ```output
 [January February March] 3 12
@@ -80,7 +80,7 @@ When you run the previous code, you get the following output:
 [October November December] 3 3
 ```
 
-Notice how the length of the slices is the same, but the capacity it's different. Let's explore the `quarter2` slice. When you declare this slice, you're saying you want the slice to start at position number three, and the last element is located at position number six. Therefore, the slice's length is three elements, but the capacity is 9 because the underlying array has more elements or positions available but not visible to the slice. For instance, if you try to print out something like this `fmt.Println(quarter2[3])`, you'll get the following error: `panic: runtime error: index out of range [3] with length 3`.
+Notice how the length of the slices is the same, but the capacity is different. Let's explore the `quarter2` slice. When you declare this slice, you're saying you want the slice to start at position number three, and the last element is located at position number six. Therefore, the slice's length is three elements, but the capacity is 9 because the underlying array has more elements or positions available but not visible to the slice. For instance, if you try to print out something like this `fmt.Println(quarter2[3])`, you'll get the following error: `panic: runtime error: index out of range [3] with length 3`.
 
 The capacity of a slice only tells you how much you can extend a slice. Therefore, you could create an extended slice from `quarter2`, like this:
 
@@ -113,7 +113,7 @@ Now that we've explored how slices work and how they're similar to arrays, it's 
 
 To add an element to a slice, Go offers the `append(slice, element)` built-in function. You need to send the slice you want to modify and the element you want to append as values to the function. The `append` function then returns a new slice that you need to store in a variable (it could be the same variable for the slice you're changing).
 
-Let's see how what we explained before looks like in code:
+Let's see how this looks in code:
 
 ```go
 package main
@@ -194,7 +194,7 @@ copy(slice2, letters[1:4])
 
 Why would you care about creating copies? Well, when you change an element from a slice, you're changing the underlying array too. Therefore, any other slices that refer to the same underlying array will get affected. Let's see this in code, and then we'll fix it by creating a copy of a slice.
 
-Use the following code to confirm that a slice point to an array, and every change you do in a slice affects the underlying array.
+Use the following code to confirm that a slice points to an array, and every change you make in a slice affects the underlying array.
 
 ```go
 package main
