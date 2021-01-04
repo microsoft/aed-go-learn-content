@@ -13,10 +13,10 @@
 | Module 2 content to Aquent | @shanama | Complete | 12/1/2020 |
 | Module 3 content | @christianhxc + @meaghanlewis | Complete| 12/4/2020 |
 | Module 3 content to Aquent | @shanama | Not Started | 12/8/2020 |
-| Module 4 content | @christianhxc + @meaghanlewis | In progress | 12/11/2020 |
-| Module 4 content to Aquent | @shanama | Not Started | 12/15/2020 |
-| Module 5 content | @christianhxc + @meaghanlewis | Not started | 12/18/2020 |
-| Module 5 content to Aquent | @shanama | Not Started | 1/5/2020 |
+| Module 4 content | @christianhxc + @meaghanlewis | Complete | 12/11/2020 |
+| Module 4 content to Aquent | @shanama | Not Started | 1/5/2021 |
+| Module 5 content | @christianhxc + @meaghanlewis | In progress | 12/18/2020 |
+| Module 5 content to Aquent | @shanama | Not Started | 1/12/2021 |
 | Module 6 content | @christianhxc + @meaghanlewis | Not started | < DATE > |
 | Module 6 content to Aquent | @shanama | Not Started | 1/12/2020 |
 | Module 7 content | @christianhxc + @meaghanlewis | Not started | < DATE > |
