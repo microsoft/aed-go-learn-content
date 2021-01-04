@@ -1,4 +1,4 @@
-# Structs
+# Exercise - use structs
 
 There are times when you need to represent a collection of fields in one structure. For instance, when you need to write a payroll program, you need to use an employee data structure. In Go, you can use structs to group together different fields that could form a record.
 

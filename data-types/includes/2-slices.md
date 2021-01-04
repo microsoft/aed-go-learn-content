@@ -1,4 +1,4 @@
-# Slices
+# Exercise - explore slices
 
 We explored arrays in the previous section, and we said that arrays are the foundation for slices and maps. You'll understand why in a moment. Like arrays, a slice is a data type in Go to represent a sequence of elements that have the same type. But the more significant difference with arrays is that the size of a slice is dynamic, not fixed.
 

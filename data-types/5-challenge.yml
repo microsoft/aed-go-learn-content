@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: 
 metadata:
-  title: Introduction
+  title: Challenge - Data Types
   description: Introduction
   ms.date: 
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction
-durationInMinutes: 1
+title: Challenge - Data Types
+durationInMinutes: 10
 content: |
-  [!include[](includes/0-introduction.md)]
+  [!include[](includes/5-challenge.md)]

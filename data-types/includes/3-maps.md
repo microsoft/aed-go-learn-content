@@ -1,4 +1,4 @@
-# Maps
+# Exercise - use maps
 
 A map in Go is basically a hash table, which is a collection of key/value pairs items. All keys in a map have to be of the same type, as well as the values. However, you can use different types for keys and values. For instance, keys could be numbers, and the values could be strings. To access a particular item in a map, you do it by referencing its key.
 

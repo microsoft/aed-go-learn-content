@@ -1,4 +1,4 @@
-# Arrays
+# Exercise - Use arrays
 
 Arrays in Go are a fixed-length data structure of a particular type. They can have zero or more elements, you have to define the size when you declare or initialize them, and **you can't resize them once created**. Therefore, arrays are not commonly used in Go programs, but they're the foundation for slices and maps.
 

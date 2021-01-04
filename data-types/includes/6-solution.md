@@ -1,4 +1,4 @@
-# Solutions - Data Types Challenge
+# Solution - Data Types Challenge
 
 Here you can find one solution for the previous challenges.
 
