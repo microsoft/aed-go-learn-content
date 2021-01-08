@@ -1,5 +1,5 @@
 # Error Handling
-While you're writing your programs, you need to consider the different ways your programs can fail and manage it. Your users don't need to see a stack trace error. It's better if they see meaningful information about what went wrong. As we've seen before, Go has built-in functions like `panic` and `recover` to manage exceptions (unexpected behavior) in your programs. But errors are known failures that your programs should be built to expect.
+While you're writing your programs, you need to consider the different ways your programs can fail and manage it. Your users don't need to see a long and confusing stack trace error. It's better if they see meaningful information about what went wrong. As we've seen before, Go has built-in functions like `panic` and `recover` to manage exceptions (unexpected behavior) in your programs. But errors are known failures that your programs should be built to expect.
 
 Go's approach for error handling is simply a control-flow mechanism where only an `if` and `return` statement is needed. For instance, when you're calling a function to get information from an employee, you might want to know if the employee exists or not. Go's opinionated way for handling such expected error would be like this:
 
@@ -51,9 +51,10 @@ func apiCallEmployee(id int) (*Employee, error) {
 }
 ```
 
-From now on, you're going to modify the `getInformation`, `apiCallEmployee`, and `main` functions to practice.
+From here on, we'll focus on modifying the `getInformation`, `apiCallEmployee`, and `main` functions to show how to handle errors.
 
 ## Error handling strategies
+
 When a function returns an error, usually, it's going to be the last return value, and it's the caller's responsibility to check if an error exists and handle it–as you've seen in the previous section. Therefore, a common strategy is to continue using that pattern to propagate the error in a subroutine. For instance, a subroutine (like the `getInformation` from the previous example) could return the error to the caller without doing anything else, like this:
 
 ```go
@@ -99,6 +100,7 @@ func getInformation(id int) (*Employee, error) {
 Lastly, instead of printing to the console the errors, we could log errors and hide any implementation details to the end-user. We'll cover logging in the next module. For now, let's see how you can create and use custom errors.
 
 ## Creating re-usable errors
+
 There are times where the number of error messages increases, and you'd like to maintain order. Or you simply want to create a library for common error messages that you'd like to re-use. In Go, you can make use of the `errors.New()` function to create errors and re-use them in several parts, like this:
 
 ```go
@@ -127,11 +129,12 @@ if errors.Is(err, ErrNotFound) {
 }
 ```
 
-## Best practices
+## Best practices for error handling
+
 When you're handling errors in Go, the following is a list of recommended practices you should keep in mind:
 
 - Always check for errors even if you don't expect them. Then, handle them properly to avoid exposing unnecessary information to the end-user.
 - Include a prefix in the error message to know where the error is originating from. For instance, the name of the package and function.
 - Create re-usable error variables as much as possible.
 - Understand the difference between using returning errors and panicking. Panic when there's nothing else you could do. For instance, if any dependency is not ready, it doesn't make sense for the program to work (unless you want to have a default behavior).
-- Prefer to log errors with as many details as possible (we'll cover how in the next section) and print out errors that an end-user can understand.
+- Log errors with as many details as possible (we'll cover how in the next section) and print out errors that an end-user can understand.
