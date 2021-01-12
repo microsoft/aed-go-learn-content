@@ -1,5 +1,5 @@
-# Error Handling
-While you're writing your programs, you need to consider the different ways your programs can fail and manage it. Your users don't need to see a long and confusing stack trace error. It's better if they see meaningful information about what went wrong. As we've seen before, Go has built-in functions like `panic` and `recover` to manage exceptions (unexpected behavior) in your programs. But errors are known failures that your programs should be built to expect.
+# Learn how to handle errors
+While you're writing your programs, you need to consider the different ways your programs can fail and manage it. Your users don't need to see a long and confusing stack trace error. It's better if they see meaningful information about what went wrong. As we've seen before, Go has built-in functions like `panic` and `recover` to manage exceptions, or unexpected behavior, in your programs. But errors are known failures that your programs should be built to expect.
 
 Go's approach for error handling is simply a control-flow mechanism where only an `if` and `return` statement is needed. For instance, when you're calling a function to get information from an employee, you might want to know if the employee exists or not. Go's opinionated way for handling such expected error would be like this:
 

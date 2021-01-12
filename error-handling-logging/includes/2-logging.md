@@ -1,4 +1,4 @@
-# Logging
+# Learn how to log in Go
 Logs play a significant role in our programs as they become the source of information we can check when something goes wrong. Usually, when an error happens, end-users simply see a message indicating a problem with the program. However, from a developer's perspective, we need more information than a simple error message. Mainly because we would like to reproduce the problem to write the proper fix. In this module, you'll learn how logging works in Go, along with a few practices you should always implement.
 
 ## The log package
