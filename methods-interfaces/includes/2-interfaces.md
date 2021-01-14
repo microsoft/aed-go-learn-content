@@ -1,11 +1,11 @@
-# Interfaces
+# How to use interfaces
 Interfaces in Go are another type of data and are used to represent other types' behavior. An interface is simply a blueprint or a contract that an object should satisfy. When you use interfaces, your codebase becomes more flexible and adaptable because you're not writing code tied to a particular implementation. Therefore, you can extend the functionality of a program quickly. You'll understand why in this module.
 
 Unlike other programming languages, interfaces in Go are satisfied implicitly. Go doesn't offer keywords to implement an interface, so when you're new to Go but you've worked with interfaces in other programming languages, this might be confusing.
 
 In this module, we'll explore interfaces in Go and how to make the most of them by running multiple examples.
 
-## Declaring an Interface
+## Declare an interface
 An interface in Go is an abstract type that includes only the methods that a concrete type must possess (or implement). That's why we said previously that an interface it's like a blueprint.
 
 Let's say that you want to create an interface in your geometry package that indicates what methods a shape must implement. You could define an interface like this:
@@ -19,8 +19,8 @@ type Shape interface {
 
 The `Shape` interface means that any type that wants to be considered a `Shape` needs to have the `Perimeter()` **and** `Area()` methods. For instance, when you create a `Square` struct, it has to implement both methods, not just one. Also, notice that an interface doesn't have the implementation details for those methods (calculate the perimeter and the area of a shape). They're simply a contract. Shapes like triangles, circles, or squares have different ways to calculate the area and the perimeter.
 
-## Implementing an Interface
-As we said before, in Go, you don't have a keyword to implement an interface. An interface in Go is satisfied implicitly by a type when it posses all the methods that an interface requires. 
+## Implement an interface
+As we said before, in Go, you don't have a keyword to implement an interface. An interface in Go is satisfied implicitly by a type when it has all the methods that an interface requires. 
 
 For instance, let's create a `Square` struct that has both methods from the `Shape` interface, like this:
 
@@ -40,7 +40,7 @@ func (s Square) Perimeter() float64 {
 
 Notice how the method's signature from the `Square` struct matches the ones from the `Shape` interface. However, there might be another interface with a different name that has the same methods. How does Go know which interface a concrete type is implementing? Go knows it when you're using it, at runtime.
 
-To demonstrate how interfaces can be used, you could write the following:
+To demonstrate how interfaces are used, you could write the following:
 
 ```go
 func main() {
@@ -51,7 +51,7 @@ func main() {
 }
 ```
 
-When you run the above program, you see the following output:
+When you run the preceding program, you see the following output:
 
 ```output
 main.Square
@@ -86,7 +86,7 @@ func printInformation(s Shape) {
 }
 ```
 
-Notice how the `printInformation` function has `Shape` as a parameter, this means that you could send to this function a `Square` or a `Circle` object, and it will work (although the output will be different). So now your `main()` function should look like this:
+Notice how the `printInformation` function has `Shape` as a parameter, this means that you could send to this function a `Square` or a `Circle` object, and it will work (although the output will be different). So now your `main()` function looks like this:
 
 ```go
 func main() {
@@ -116,7 +116,7 @@ Notice how you don't get an error, and the output varies depending on the object
 
 The beauty of using interfaces is that for every new type or implementation of `Shape` the `printInformation` function doesn't have to change. This is why we said before that your code becomes flexible and more comfortable to extend when you use interfaces.
 
-## Implementing a Stringer
+## Implement a stringer interface
 A simple example of extending existing functionality is by using a `Stringer` which is an interface that has a `String()` method, like this:
 
 ```go
@@ -146,7 +146,7 @@ func main() {
 }
 ```
 
-When you run the above program, you see the following output:
+When you run the preceding program, you see the following output:
 
 ```output
 John Doe is from USA
@@ -155,7 +155,7 @@ Mark Collins is from United Kingdom
 
 As you can see, you've used a custom type (a struct) to write a custom version of the `String()` method. This is a common way of implementing an interface in Go, and you'll find examples of this in many programs as we're about to explore.
 
-## Extending an Existing Implementation
+## Extend an existing implementation
 Let's say that you have the following code, and you'd like to extend its functionality by writing a custom implementation of a `Writer` method that's in charge of manipulating some data.
 
 Create a program using the following code that consumes the GitHub API to get three repositories from Microsoft:
@@ -181,7 +181,7 @@ func main() {
 }
 ```
 
-When you run the above code, something like the following (a portion of it for readability purposes):
+When you run the preceding code, something like the following (a portion of it for readability purposes):
 
 ```output
 [{"id":276496384,"node_id":"MDEwOlJlcG9zaXRvcnkyNzY0OTYzODQ=","name":"-Users-deepakdahiya-Desktop-juhibubash-test21zzzzzzzzzzz","full_name":"microsoft/-Users-deepakdahiya-Desktop-juhibubash-test21zzzzzzzzzzz","private":false,"owner":{"login":"microsoft","id":6154722,"node_id":"MDEyOk9yZ2FuaXphdGlvbjYxNTQ3MjI=","avatar_url":"https://avatars2.githubusercontent.com/u/6154722?v=4","gravatar_id":"","url":"https://api.github.com/users/microsoft","html_url":"https://github.com/micro
@@ -202,7 +202,7 @@ type Writer interface {
 }
 ```
 
-You could continue exploring the `io` package's source code until you find where [`Copy` ends up calling the `Write` method](https://golang.org/src/io/io.go?s=12980:13040#L411), but for now, let's leave it here.
+You can continue exploring the `io` package's source code until you find where [`Copy` ends up calling the `Write` method](https://golang.org/src/io/io.go?s=12980:13040#L411), but for now, let's leave it here.
 
 Because `Writer` is an interface and it's an object that the `Copy` function is expecting, it means that you could write your custom implementation of the `Write` method. Therefore, you're able to customize the content you print out to the terminal. 
 
@@ -212,7 +212,7 @@ So, the first thing you need to implement an interface is to create a custom typ
 type customWriter struct{}
 ```
 
-Now you're ready to write your custom `Write` function. Also, you need to write a struct to parse the API response in JSON format to a Golang object. You could the JSON-to-Go site to create a struct from a JSON payload. So the `Write` method could look like this:
+Now you're ready to write your custom `Write` function. Also, you need to write a struct to parse the API response in JSON format to a Golang object. You could use the JSON-to-Go site to create a struct from a JSON payload. So the `Write` method could look like this:
 
 ```go
 type GitHubResponse []struct {
@@ -294,7 +294,7 @@ func main() {
 }
 ```
 
-## Writing a Custom Server API
+## Write a custom server API
 Finally, let's explore another use case for interfaces that you might find useful if you're creating a server API. The typical way of writing a web server is by using the `http.Handler` interface from the `net/http` package that looks like this (you don't have to write the below code):
 
 ```go
@@ -340,19 +340,19 @@ func main() {
 }
 ```
 
-Before we explore the above's code, let's start by running it like this:
+Before we explore the preceding code, let's run it like this:
 
 ```bash
 go run main.go
 ```
 
-If you don't see anything, it's a good sign. Now open `http://localhost:8000` in a new browser window or simply run the following command in your terminal:
+If you don't see any output, it's a good sign. Now open `http://localhost:8000` in a new browser window or simply run the following command in your terminal:
 
 ```bash
 curl http://localhost:8000
 ```
 
-You should see the following output:
+You should now see the following output:
 
 ```output
 Go T-Shirt: $25.00
