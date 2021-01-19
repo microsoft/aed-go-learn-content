@@ -1,4 +1,5 @@
 # How to use interfaces
+
 Interfaces in Go are another type of data and are used to represent other types' behavior. An interface is simply a blueprint or a contract that an object should satisfy. When you use interfaces, your codebase becomes more flexible and adaptable because you're not writing code tied to a particular implementation. Therefore, you can extend the functionality of a program quickly. You'll understand why in this module.
 
 Unlike other programming languages, interfaces in Go are satisfied implicitly. Go doesn't offer keywords to implement an interface, so when you're new to Go but you've worked with interfaces in other programming languages, this might be confusing.
@@ -6,6 +7,7 @@ Unlike other programming languages, interfaces in Go are satisfied implicitly. G
 In this module, we'll explore interfaces in Go and how to make the most of them by running multiple examples.
 
 ## Declare an interface
+
 An interface in Go is an abstract type that includes only the methods that a concrete type must possess (or implement). That's why we said previously that an interface it's like a blueprint.
 
 Let's say that you want to create an interface in your geometry package that indicates what methods a shape must implement. You could define an interface like this:
@@ -116,7 +118,8 @@ Notice how you don't get an error, and the output varies depending on the object
 
 The beauty of using interfaces is that for every new type or implementation of `Shape` the `printInformation` function doesn't have to change. This is why we said before that your code becomes flexible and more comfortable to extend when you use interfaces.
 
-## Implement a stringer interface
+## Implement a Stringer interface
+
 A simple example of extending existing functionality is by using a `Stringer` which is an interface that has a `String()` method, like this:
 
 ```go
@@ -156,6 +159,7 @@ Mark Collins is from United Kingdom
 As you can see, you've used a custom type (a struct) to write a custom version of the `String()` method. This is a common way of implementing an interface in Go, and you'll find examples of this in many programs as we're about to explore.
 
 ## Extend an existing implementation
+
 Let's say that you have the following code, and you'd like to extend its functionality by writing a custom implementation of a `Writer` method that's in charge of manipulating some data.
 
 Create a program using the following code that consumes the GitHub API to get three repositories from Microsoft:
@@ -295,6 +299,7 @@ func main() {
 ```
 
 ## Write a custom server API
+
 Finally, let's explore another use case for interfaces that you might find useful if you're creating a server API. The typical way of writing a web server is by using the `http.Handler` interface from the `net/http` package that looks like this (you don't have to write the below code):
 
 ```go
