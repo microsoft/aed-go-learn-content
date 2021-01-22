@@ -1,6 +1,6 @@
 # Use channels as a communication mechanism
 
-A channel in Go is a communication mechanism among goroutines, and this is why we said before that Go's approach for concurrency is: **"Do not communicate by sharing memory; instead, share memory by communicating."** So when you need to send a value from one goroutine to another, you use channels. Let's see how they work and how you can start using them to write concurrent Go programs.
+A channel in Go is a communication mechanism between goroutines, and this is why we said before that Go's approach for concurrency is: **"Do not communicate by sharing memory; instead, share memory by communicating."** So when you need to send a value from one goroutine to another, you use channels. Let's see how they work and how you can start using them to write concurrent Go programs.
 
 ## Channels Syntax
 
@@ -34,7 +34,7 @@ Let's go back to the program we created before, and let's use channels to remove
 ch := make(chan string)
 ```
 
-And let's remove the sleep line `time.Sleep(3 * time.Second)`. 
+And let's remove the sleep line `time.Sleep(3 * time.Second)`.
 
 Now, we can use channels to communicate between goroutines, so let's refactor our code, and instead of printing out the result in the `checkAPI` function, send that message over the channel. But to use the channel from that function, you need to add the channel as the parameter. The `checkAPI` function should look like this:
 

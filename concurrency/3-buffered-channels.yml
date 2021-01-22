@@ -2,7 +2,7 @@
 uid: 
 metadata:
   title: Learn about buffered channels
-  description: Introduction
+  description: Understand how buffered channels behave like a queue and send and receive data without blocking a program.
   ms.date: 
   author: meaghanlewis
   ms.author: shanama

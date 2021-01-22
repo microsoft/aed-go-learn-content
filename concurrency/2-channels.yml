@@ -2,7 +2,7 @@
 uid: 
 metadata:
   title: Use channels as a communication mechanism
-  description: Introduction
+  description: Learn how channels work to communicate between goroutines.
   ms.date: 
   author: meaghanlewis
   ms.author: shanama

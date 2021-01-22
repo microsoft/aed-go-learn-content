@@ -1,8 +1,8 @@
 # Learn about buffered channels
 
-As you've seen before, channels are unbuffered by default, meaning that they only accept a *send* operation if there's a *receive* operation. Otherwise, the program will be blocked waiting forever. There are times where you need that type of synchronization between goroutines. However, there might be times where you simply need to implement concurrency, and you don't need to restrict how goroutines communicate with each other.
+As you've learned, channels are unbuffered by default, meaning that they only accept a *send* operation if there's a *receive* operation. Otherwise, the program will be blocked waiting forever. There are times where you need that type of synchronization between goroutines. However, there might be times where you simply need to implement concurrency, and you don't need to restrict how goroutines communicate with each other.
 
-Buffered channels can receive and send data without blocking the program because a buffered channel behaves like a queue. You can limit the size of this queue when you create the channel, like this:
+Buffered channels send and receive data without blocking the program because a buffered channel behaves like a queue. You can limit the size of this queue when you create the channel, like this:
 
 ```go
 ch := make(chan string, 10)
