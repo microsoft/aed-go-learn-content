@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: 
 metadata:
-  title: Summary
-  description: Summary
+  title: Challenge
+  description: Calculate Fibonacci numbers faster with concurrency.
   ms.date: 
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Summary
-durationInMinutes: 1
+title: Challenge
+durationInMinutes: 10
 content: |
-  [!include[](includes/7-summary.md)]
+  [!include[](includes/4-challenge.md)]

@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: 
 metadata:
-  title: Introduction
-  description: Introduction
+  title: Learn about goroutines
+  description: See how Go handles concurrency with goroutines.
   ms.date: 
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction
-durationInMinutes: 1
+title: Learn about goroutines
+durationInMinutes: 7
 content: |
-  [!include[](includes/0-introduction.md)]
+  [!include[](includes/1-goroutines.md)]

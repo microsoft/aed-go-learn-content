@@ -1,8 +1,10 @@
-# Communication Mechanisms
+# Use channels as a communication mechanism
+
 A channel in Go is a communication mechanism among goroutines, and this is why we said before that Go's approach for concurrency is: **"Do not communicate by sharing memory; instead, share memory by communicating."** So when you need to send a value from one goroutine to another, you use channels. Let's see how they work and how you can start using them to write concurrent Go programs.
 
 ## Channels Syntax
-Because a channel is a communication mechanism that sends and receives data, they also have a type, which means that you can only send data for the kind that the channel supports. You use the keyword `chan` as the data type for a channel, but you also need to specify the data type that will pass through the channel, like an `int` type. 
+
+Because a channel is a communication mechanism that sends and receives data, they also have a type, which means that you can only send data for the kind that the channel supports. You use the keyword `chan` as the data type for a channel, but you also need to specify the data type that will pass through the channel, like an `int` type.
 
 Every time you declare a channel or want to specify a channel as a parameter in a function, you need to use `chan <type>`, like `chan int`. And, to create a channel, you use the built-in `make()` function, like this:
 
@@ -75,6 +77,7 @@ Done! It took 0.007401217 seconds!
 Well, at least it's working without a call to a sleep function, right? But it's still not doing what we want to because we're seeing the output only from one of the goroutines, and we created five. Let's see why this program it's working this way in the next section.
 
 ## Unbuffered Channels
+
 When you create a channel using the `make()` function, you create an unbuffered channel, which is the default behavior. Unbuffered channels block the sending operation until there's someone ready to receive the data. This is why we said before that sending and receiving are blocking operations. This is also why the program from the previous section stopped as soon as it received the first message.
 
 We can start by saying that the `fmt.Print(<-ch)` blocks the program because it's reading from a channel, and it's waiting for some data to arrive. As soon as it got something, it continues with the next line, and the program finishes. What happened to the rest of the goroutines? They're still running, but no one is listening anymore, and because the program finished early, some goroutines couldn't send data. To prove this point, let's add another `fmt.Print(<-ch)`, like this:

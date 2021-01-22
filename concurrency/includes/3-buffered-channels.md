@@ -1,4 +1,5 @@
-# Buffered Channels
+# Learn about buffered channels
+
 As you've seen before, channels are unbuffered by default, meaning that they only accept a *send* operation if there's a *receive* operation. Otherwise, the program will be blocked waiting forever. There are times where you need that type of synchronization between goroutines. However, there might be times where you simply need to implement concurrency, and you don't need to restrict how goroutines communicate with each other.
 
 Buffered channels can receive and send data without blocking the program because a buffered channel behaves like a queue. You can limit the size of this queue when you create the channel, like this:
@@ -69,7 +70,7 @@ main.main()
 exit status 2
 ```
 
-And the reason for this is that the calls to the `send` function are sequential; you're not creating a new goroutine. Therefore there's nothing to queue. **Channels are deeply connected to goroutines, and without another goroutine receiving data from the channel, the whole program might enter into a block forever (as you've seen, it does happen).** Let's make something interesting, create a goroutine for the last two calls (the first two fit into the buffer properly), and make them for loop to run four times, like this:
+And the reason for this is that the calls to the `send` function are sequential; you're not creating a new goroutine. Therefore there's nothing to queue. *Channels are deeply connected to goroutines, and without another goroutine receiving data from the channel, the whole program might enter into a block forever (as you've seen, it does happen).* Let's make something interesting, create a goroutine for the last two calls (the first two fit into the buffer properly), and make them for loop to run four times, like this:
 
 ```go
 func main() {
@@ -141,12 +142,14 @@ func checkAPI(api string, ch chan string) {
 
 When you run the program, you get the same output as before. You could play around by changing the channel's size with lower or higher numbers, and the program will still work.
 
-## Unbuffered or Buffered Channels?
+## Unbuffered or buffered channels?
+
 At this point, you might be wondering when to use one type or another. And it all depends on how you want the communication to flow between goroutines. Unbuffered channels communicate synchronously, and it guarantees that every time you send data, the program gets blocked until someone is reading from the channel.
 
 Conversely, buffered channels decouple the send and receive operations, and they don't block a program, but you have to be careful because you might end up causing a deadlock (as you've seen previously). When you use unbuffered channels, you can control how many goroutines can run concurrently. For instance, you might be making calls to an API, and you want to control how many calls you perform every second. Otherwise, you might get blocked.
 
-## Channel Directions
+## Channel directions
+
 An interesting feature for channels in Go is that when you use channels as parameters to a function, you can specify whether the channel is meant to *send1* or *receive* data. As your program grows, you might end up having too many functions, and it's a good idea to document the intent of each channel to use them properly. Or perhaps you're writing a library and want to expose a channel as read-only to maintain data consistency.
 
 To define the channel's direction, you do it in a similar way when you're reading or receiving data, but you do it when you're declaring them in a function parameter. The syntax to define the type of channel as a parameter in a function is like the following:
@@ -207,6 +210,7 @@ When you try to run the program, you see the following error:
 It's better to have a compile error than misusing a channel.
 
 ## Multiplexing
+
 Finally, let's cover a short topic on how to interact with more than one channel simultaneously by using the `select` keyword. There will be times when you'd like to wait for an event to happen when working with multiple channels. For instance, you might include some logic to abort an operation when there's an anomaly in the data your program is processing.
 
 A `select` statement works like a `switch` statement but for channels, and it blocks the program execution until it receives an event to process. If it gets more than one event, it chooses one at random. An essential aspect of the `select` statement is that it finishes its execution once it processes an event. If you'd like to wait for more events to happen, you might need to use a loop.

@@ -6,6 +6,7 @@ At this point, you already have the required knowledge to cover more advanced to
 So let's start to explore what you'll learn in this module.
 
 ## Learning objectives
+
 In this module, you will learn about:
 
 - How concurrency works in Go
@@ -16,7 +17,7 @@ In this module, you will learn about:
 
 ## Prerequisites
 
-- A Go environment ready to create applications. Ideally, you should have installed and configured Go locally and [VS Code](https://code.visualstudio.com/download) with the [Go extension](https://marketplace.visualstudio.com/items?itemName=golang.Go) installed. Alternatively, you could use the [Go Playground](https://play.golang.org/).
+- A Go environment ready to create applications. Ideally, you should have installed and configured Go locally and [VS Code](https://code.visualstudio.com/download) with the [Go extension](https://marketplace.visualstudio.com/items?itemName=golang.Go) installed.
 - Be able to create and modify `.go` files
 - Be able to run Go applications using the terminal prompt
 - Have knowledge of basic data types like `string`, `int`, and `boolean`

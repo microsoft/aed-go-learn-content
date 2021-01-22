@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: 
 metadata:
-  title: Use channels as a communication mechanism
+  title: Learn about buffered channels
   description: Introduction
   ms.date: 
   author: meaghanlewis
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Use channels as a communication mechanism
-durationInMinutes: 8
+title: Learn about buffered channels
+durationInMinutes: 9
 content: |
-  [!include[](includes/2-channels.md)]
+  [!include[](includes/3-buffered-channels.md)]

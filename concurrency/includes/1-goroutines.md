@@ -1,4 +1,4 @@
-# Concurrency in Go
+# Learn about goroutines
 Concurrency is the composition of independent activities like the work a web server does when dealing with multiple user requests simultaneously but in an autonomous way. Concurrency is present in many programs today. Web servers are one example, but you also see the need for concurrency when processing significant amounts of data in batches.
 
 Go has two styles for writing concurrent programs. One is the traditional one you might have used in other languages with threads. In this module, you'll learn about the Go's style, where values are passed between independent activities known as goroutines to communicate processes.
