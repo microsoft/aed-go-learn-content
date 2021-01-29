@@ -1,8 +1,9 @@
 # Writting Tests in Go
 Before we jump into writing our program, let's talk about how testing in Go works. The reason for this is that we'd like to start coding using the Test Driven Development (TDD) approach. This means we'll write our tests first, then we'll write the code that satisfies that test.
 
-# Create the Test file
-First, we need to create the Go file to put all of our tests for the `bankcore` package. To create a tests file, the file's name has to finish with `_test.go`. You can put whatever you want before, but the pattern is to use the name of the file you're testing. Additionally, every test you want to write has to be a function that starts with `Test`, and then you usually write a descriptive name for the test you're writing like `TestDeposit`.
+# Create the test file
+
+First, we need to create the Go file to put all of our tests for the `bankcore` package. To create a test file, the file's name has to finish with `_test.go`. You can put whatever you want before, but the pattern is to use the name of the file you're testing. Additionally, every test you want to write has to be a function that starts with `Test`, and then you usually write a descriptive name for the test you're writing like `TestDeposit`.
 
 Head over to the `$GOPATH/src/bankcore/` location and create a file called `bank_test.go` with the following content:
 
@@ -31,4 +32,4 @@ PASS
 ok      github.com/msft/bank    0.391s
 ```
 
-Let's leave it here for now; we'll continue modifying this test and create new ones as we write the logic for our online bank system.
+Let's leave it here for now; we'll complete this test and create new tests as we write the logic for our online bank system.
