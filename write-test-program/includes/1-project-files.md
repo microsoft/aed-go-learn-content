@@ -1,20 +1,21 @@
 # Project: An Online Bank
-Let's talk about what we'll be creating. As we said before, we'll create two projects: one for the program's core logic and another one to expose certain logic through a Web API. Imagine that you're now part of a team building an online bank system where users can create accounts, transfer money, withdraw money, and get an account statement.
+Let's talk about what we'll be creating. As mentioned previously, we'll create two projects: one for the program's core logic and another one to expose certain logic through a Web API. Imagine that you're now part of a team building an online bank system where users can create accounts, transfer money, withdraw money, and get an account statement.
 
 ## Features and Requirements
 The online bank we're about to build is a proof of concept, so most of the interaction with the core package we'll have is similar to what we've done so far: through a CLI program. We won't persist data into a database, and all calls will happen when the program starts. Then, we'll simply expose an endpoint to see the account statement from a customer.
 
-In a nutshell, the online bank system should be able to do the following:
+In a nutshell, the online bank system will be able to do the following:
 
 - Create an account.
-- Give customers the possibility to withdraw money.
-- Customers will be able to transfer money to another account.
+- Give customers the ability to withdraw money.
+- Give customers the ability to transfer money to another account.
 - Provide an account statement with customer data and final balance.
-- Expose through a Web API an endpoint to print an account statement.
+- Expose a Web API through an endpoint to print an account statement.
 
 We'll build this together, so don't worry too much about the details for now.
 
-## Project Files
+## Project files
+
 Before we start writing our program, let's create the initial set of files that we'll need. We'll create a Go package for all the bank core logic and a `main` program to initialize the system with a few customers and actions like deposits, transfers, etc. Additionally, this `main` program will start a Web API server to expose an endpoint for the account statement we mentioned before.
 
 Let's create the following files structure in your `$GOPATH` directory:
@@ -96,4 +97,4 @@ This is a good approach to make sure you write the minimum amount of code before
 
 When you're done with the initial project files set up, move on to the next module. Otherwise, you might need to revisit the section where we discussed how packages work in Go and why you need to use Go modules. For now, you simply need the file structure we showed you before with the exact same content we included here.
 
-See you in the next module to start writing the code we need to implement the initial set of features for our online bank system.
+Next, we'll start writing the code we need to implement the initial set of features for our online bank system.
