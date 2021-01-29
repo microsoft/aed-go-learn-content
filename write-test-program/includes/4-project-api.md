@@ -1,4 +1,5 @@
-# Bank API
+# Write the bank API
+
 Now that we've built the online bank's core logic let's build a Web API to test it from a browser (or even the command line). For now, we'll not use a database to persist data, so we'll have to create a global variable to store all the accounts in memory. Additionally, we'll skip the testing part to avoid keeping this guide too long, but we suggest you follow the same approach we followed when building the core package.
 
 ## Accounts in memory

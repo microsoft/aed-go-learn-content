@@ -1,49 +1,14 @@
-# Bank Core Package
+# Write the bank core package
+
 Now that we have the base project running along with our tests file let's start writing the code that implements the previous section's features and requirements. We'll come back to a few topics we've discussed, like errors, structs, and methods.
 
 Open the `$GOPATH/src/bankcore/bank.go` file, remove the `Hello()` function and let's start writing the core logic of our online bank system.
 
-## Create structors for customers and accounts
+## Create structs for customers and accounts
 
-Before you start writing any code, let's write a test for it, even if it fails (that's the idea). So, in the `bank_test.go` file, modify the `TestAccount` function with the following one:
+Let's begin by creating a `Customer` struct where we'll have the name, address, and phone from a person who wants to become a bank customer. Also, we need a struct for the `Account` data and because a customer can have more than one account, let's embed the customer information into the account object. Basically, let's create what we defined in the `TestAccount` test.
 
-```go
-package bank
-
-import "testing"
-
-func TestAccount(t *testing.T) {
-    account := Account{
-        Customer: Customer{
-            Name:    "John",
-            Address: "Los Angeles, California",
-            Phone:   "(555) 314 8947",
-        },
-        Number:  1001,
-        Balance: 0,
-    }
-
-    if account.Name == "" {
-        t.Error("can't create an Account object")
-    }
-}
-```
-
-We're using the `t.Error()` function to say that the test failed if something doesn't happen the way it supposes to happen.
-
-Also, notice that the test has the logic to create an account object (that doesn't exist yet), but we're designing at this moment how we'd like to interact with our package. **You'll notice that we'll provide you with the code for the tests as we don't want to explain line by line, but your mental model should be that you start little by little and do as many iterations as you need.** In our case, we're going to do only one iteration, which is writing the test, make sure it fails, and write the code that satisfies that test. When coding on your own, you should start simple and add complexity as you progress.
-
-If you run the `go test -v` command, you should see a failing test in the output:
-
-```output
-# github.com/msft/bank [github.com/msft/bank.test]
-./bank_test.go:6:13: undefined: Account
-FAIL    github.com/msft/bank [build failed]
-```
-
-So, let's create a `Customer` struct where we'll have the name, address, and phone from a person who wants to become a bank customer. Also, we need a struct for the `Account` data and because a customer can have more than one account, let's embed the customer information into the account object. Basically, let's create what we defined in the `TestAccount` test.
-
-The structs we need could look like the following ones:
+The structs we need could look like the following:
 
 ```go
 package bank
@@ -63,7 +28,7 @@ type Account struct {
 }
 ```
 
-If you run the `go test -v` command, you should see that the test is passing:
+When you run the `go test -v` command now, you should see that the test is passing:
 
 ```output
 === RUN   TestAccount
@@ -72,9 +37,10 @@ PASS
 ok      github.com/msft/bank    0.094s
 ```
 
-Now that we have the structs let's write the methods we use to add the features we need in the initial version of our bank, like deposit, withdraw, and transfer money.
+This is passing because we have implemented the structs for *Customer* and *Account*. Now that we have the structs let's write the methods we use to add the features we need in the initial version of our bank, like deposit, withdraw, and transfer money.
 
-## Method: Deposit
+## Implement the deposit method
+
 We need to start with a method to start adding money to our account, but before we do that, let's create the `TestDeposit` function in the `bank_test.go` file, like this:
 
 ```go
@@ -97,7 +63,7 @@ func TestDeposit(t *testing.T) {
 }
 ```
 
-If you run the `go test -v` command, you should see a failing test in the output:
+When you run the `go test -v` command, you should see a failing test in the output:
 
 ```output
 # github.com/msft/bank [github.com/msft/bank.test]
@@ -121,7 +87,7 @@ func (a *Account) Deposit(amount float64) error {
 }
 ```
 
-If you run the `go test -v` command, you should see that the test is passing:
+When you run the `go test -v` command, you should see that the test is passing:
 
 ```output
 === RUN   TestAccount
@@ -152,7 +118,7 @@ func TestDepositInvalid(t *testing.T) {
 }
 ```
 
-If you run the `go test -v` command, you should see that the test is passing:
+When you run the `go test -v` command, you should see that the test is passing:
 
 ```output
 === RUN   TestAccount
@@ -165,7 +131,7 @@ PASS
 ok      github.com/msft/bank    0.197s
 ```
 
-**NOTE:** *From now on, we'll write one test case, but you should write a test for every functionality you add to your programs, like in this case, the error handling logic.*
+**NOTE:** *From here on, we'll write one test case for each method, but you should write as many tests as you feel comfortable with to your programs covering both expected and unexpected scenarios. For example, in this case, the error handling logic is tested.*
 
 ## Implement the withdraw method
 
@@ -187,12 +153,12 @@ func TestWithdraw(t *testing.T) {
     account.Withdraw(10)
 
     if account.Balance != 0 {
-        t.Error("balance is not being updated after widhdraw")
+        t.Error("balance is not being updated after withdraw")
     }
 }
 ```
 
-If you run the `go test -v` command, you should see a failing test in the output:
+When you run the `go test -v` command, you should see a failing test in the output:
 
 ```output
 # github.com/msft/bank [github.com/msft/bank.test]
@@ -220,7 +186,7 @@ func (a *Account) Withdraw(amount float64) error {
 }
 ```
 
-If you run the `go test -v` command, you should see that the test is passing:
+When you run the `go test -v` command, you should see that the test is passing:
 
 ```output
 === RUN   TestAccount
@@ -259,7 +225,7 @@ func TestStatement(t *testing.T) {
 }
 ```
 
-If you run the `go test -v` command, you should see a failing test in the output:
+When you run the `go test -v` command, you should see a failing test in the output:
 
 ```output
 # github.com/msft/bank [github.com/msft/bank.test]

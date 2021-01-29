@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.language.
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 
+  author: meaghanlewis
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge check
+durationInMinutes: 1
+content: |
+  Answer these questions to demonstrate what you've learned:
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What should be the name of a file that has the test cases in a package?"
+    choices:
+    - content: "`banktests.go`"
+      isCorrect: false
+      explanation: "Files whose names end with `_test.go` are not built by the `go build` command and run the tests with the `go tests` command."
+    - content: "`bank_test.go`"
+      isCorrect: true
+      explanation: "Correct! Files whose names end with `_test.go` are not built by the `go build` command and run the tests with the `go tests` command."
+    - content: "`test.go`"
+      isCorrect: false
+      explanation: "Files whose names end with `_test.go` are not built by the `go build` command and run the tests with the `go tests` command."
+    - content: "test_bank.go"
+      isCorrect: false
+      explanation: "Files whose names end with `_test.go` are not built by the `go build` command and run the tests with the `go tests` command."
+  - content: "What's the correct signature for a test function?"
+    choices:
+    - content: "`func TestName(t *testing.T) { /* ... */ }`"
+      isCorrect: true
+      explanation: "Correct! The name of a test function should have the `Test` prefix and should include the `t *testing.T` as a parameter."
+    - content: "`func NameTest(t *testing.T) { /* ... */ }`"
+      isCorrect: false
+      explanation: "The name of a test function should have the `Test` prefix and should include the `t *testing.T` as a parameter."
+    - content: "`func TestName() { /* ... */ }`"
+      isCorrect: false
+      explanation: "The name of a test function should have the `Test` prefix and should include the `t *testing.T` as a parameter."
+    - content: "`func NameTest(t *testing.T) { /* ... */ }`"
+      isCorrect: false
+      explanation: "The name of a test function should have the `Test` prefix and should include the `t *testing.T` as a parameter."
+  - content: "What's the command to run tests in a package in verbose mode?"
+    choices:
+    - content: "`go tests -v`"
+      isCorrect: true
+      explanation: "Correct! When you have files that end with `_test.go`, you can run the `go tests -v` to run the tests and get a detailed output of the tests that ran."
+    - content: "`go test main.go`"
+      isCorrect: false
+      explanation: "When you have files that end with `_test.go`, you can run the `go tests -v` to run the tests and get a detailed output of the tests that ran."
+    - content: "`go run tests`"
+      isCorrect: false
+      explanation: "When you have files that end with `_test.go`, you can run the `go tests -v` to run the tests and get a detailed output of the tests that ran."
+    - content: "`go test main.go`"
+      isCorrect: false
+      explanation: "When you have files that end with `_test.go`, you can run the `go tests -v` to run the tests and get a detailed output of the tests that ran."
