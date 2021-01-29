@@ -1,8 +1,9 @@
 # Bank API
 Now that we've built the online bank's core logic let's build a Web API to test it from a browser (or even the command line). For now, we'll not use a database to persist data, so we'll have to create a global variable to store all the accounts in memory. Additionally, we'll skip the testing part to avoid keeping this guide too long, but we suggest you follow the same approach we followed when building the core package.
 
-## Accounts in Memory
-As we said before, we're not going to use a database to persist data. Instead, we'll use a memory map for the accounts we'll create when the program starts. Additionally, we'll use a map to access the account information using the account number.
+## Accounts in memory
+
+As we said previously, we're not going to use a database to persist data. Instead, we'll use a memory map for the accounts we'll create when the program starts. Additionally, we'll use a map to access the account information using the account number.
 
 Head over to the `$GOPATH/src/bankapi/main.go` file and use the following code to create the global `accounts` variable and initialize it with an account (something similar to what we did when creating the tests previously):
 
@@ -29,8 +30,9 @@ func main() {
 
 Run the application with `go run main.go` to make sure you don't have any errors. For now, the program does nothing else, so let's add the logic to launch a Web API.
 
-## Expose Statement Method
-Create a Web API in Go is very easy, as you've seen before in a previous module. So, we'll continue using the `net/http` package and use the `HandleFunc` and `ListenAndServe` functions to expose endpoints and launch the server. The `HandleFunc` function requires a name for the URL path you'd like to expose and the name of a function with the logic for that endpoint.
+## Expose the statement method
+
+Creating a Web API in Go is very easy, as you've seen before in a previous module. So, we'll continue using the `net/http` package and use the `HandleFunc` and `ListenAndServe` functions to expose endpoints and launch the server. The `HandleFunc` function requires a name for the URL path you'd like to expose and the name of a function with the logic for that endpoint.
 
 Let's start by exposing the functionality to print out the statement for an account. You need to create the following function (pay attention to the parameters):
 
@@ -88,7 +90,8 @@ You should see the following output:
 1001 - John - 0
 ```
 
-## Expose Deposit Method
+## Expose the deposit method
+
 Let's continue using the same approach to expose the deposit method. In this case, we'd like to add money to the account we have in memory. So every time we call the `Deposit()` method, the balance should increase.
 
 Create a `deposit()` function in the main program that gets the account number from the query string, validates that the account exist in the `accounts` map, validates that the amount to deposit is a valid number, and then calls the `Deposit()` method, like this:
@@ -158,10 +161,9 @@ You should see the following output:
 
 If you make the same call several times, the account balance will continue to increase. Give it a try to confirm that the `accounts` map in memory is updated at runtime. Of course, if you stop the program, all the deposits you did get lost, but that's expected in this initial version.
 
-## Expose Withdraw Method
-Finally, let's expose the method to withdraw money from an account. Again, let's first create the `withdraw` function in the main program that will validate the account number information, withdraw, and print out any error you receive from the core package.
+## Expose the withdraw method
 
-Add the following function to your main program:
+Finally, let's expose the method to withdraw money from an account. Again, let's first create the `withdraw` function in the main program that will validate the account number information, withdraw, and print out any error you receive from the core package. Add the following function to your main program:
 
 ```go
 func withdraw(w http.ResponseWriter, req *http.Request) {
@@ -240,4 +242,4 @@ You should see the following output:
 1001 - John - 200
 ```
 
-And that's it! You've created a Web API to expose certain functionality from a package you've built from scratch. Head over to the next section to continue practicing. This time you'll have to write your solution.
+And that's it! You've created a Web API to expose certain functionality from a package you've built from scratch. Head over to the next section to continue practicing. This time you'll be presented with a challenge you have to write your own solution for.
