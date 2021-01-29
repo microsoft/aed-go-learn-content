@@ -18,11 +18,11 @@
 | Module 5 content | @christianhxc + @meaghanlewis | Complete | 1/8/2020 |
 | Module 5 content to Aquent | @shanama | Complete | 1/12/2021 |
 | Module 6 content | @christianhxc + @meaghanlewis | Complete | 1/13/2021 |
-| Module 6 content to Aquent | @shanama | Not Started | 1/12/2020 |
-| Module 7 content | @christianhxc + @meaghanlewis | Not started | < DATE > |
-| Module 7 content to Aquent | @shanama | Not Started | 1/19/2020 |
-| Module 8 content | @christianhxc + @meaghanlewis | Not started | |
-| Module 8 content to Aquent | @shanama | Not Started | 1/26/2020 |
+| Module 6 content to Aquent | @shanama | Complete | 1/12/2020 |
+| Module 7 content | @christianhxc + @meaghanlewis | Complete | 1/20/2021 |
+| Module 7 content to Aquent | @shanama | Complete | 1/19/2020 |
+| Module 8 content | @christianhxc + @meaghanlewis | Complete | 1/29/2021 |
+| Module 8 content to Aquent | @shanama | Not Started | 2/1/2021 |
 | Review Content | @meaghanlewis | Not Started | < DATE > |
 | Content Draft on Learn | Aquent | Not Started | < DATE > |
 | Sign off on Content on Learn | @meaghanlewis | Not Started | < DATE > |
@@ -41,7 +41,7 @@
 | Module | Implement error handling and logging | Understand how to handle errors and log helpful information in your Go programs. | 45 min |
 | Module | Use methods and interfaces | Learn about best practices for methods and interfaces in Go. | 45 min |
 | Module | Learn how concurrency works in Go | Understand more about concurrency, one of the most unique features in Go. | 45 min |
-| Module | Write and test a program | Using what you've learned about Go, write and test a complete program. | 45 min |
+| Module | Write and test a program | Use what you've learned about Go, write and test a complete program. | 45 min |
 
 ## Promotion and Marketing
 
