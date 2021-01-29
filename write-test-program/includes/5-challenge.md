@@ -1,10 +1,13 @@
 # Challenge
 You have an application that's working with some basic features. However, there's one we're missing: the ability to transfer money to another account. This challenge consists of adding that functionality plus another feature that we think will add value to our existing API.
 
-## Method: Transfer
+## Implement the transfer method
+
 First, you need to implement the ability to transfer money to another account. In this case, you have to initialize the program with at least two accounts and not just one, as we did previously. Because you're going to add a new method in the core package, start by creating the test case to make sure you write the proper logic to transfer money. Pay close attention to how you communicate between functions and pointers. Your transfer method should receive the amount of money you want to transfer and an account object where you'll add the funds. Ensure you reuse the deposit and withdraw methods to avoid repetition (especially for the error handling). Lastly, remember you can't transfer money to another account if you don't have enough funds.
 
-## Method: Statement in JSON
+
+## Modify the statement endpoint to return a JSON object
+
 At this point, the `/statement` endpoint returns a string that if you want to expose as an API is not going to be useful. Modify the endpoint to return the account object in a JSON format, like this:
 
 ```output
