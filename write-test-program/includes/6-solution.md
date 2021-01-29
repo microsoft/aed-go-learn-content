@@ -1,7 +1,7 @@
 # Solution
 Here's the complete code that solves the two challenges in this module.
 
-## Banc Core Test
+## Bank Core Test
 
 ```go
 package bank
