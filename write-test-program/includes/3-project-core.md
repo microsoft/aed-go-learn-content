@@ -3,7 +3,8 @@ Now that we have the base project running along with our tests file let's start 
 
 Open the `$GOPATH/src/bankcore/bank.go` file, remove the `Hello()` function and let's start writing the core logic of our online bank system.
 
-## Structs
+## Create structors for customers and accounts
+
 Before you start writing any code, let's write a test for it, even if it fails (that's the idea). So, in the `bank_test.go` file, modify the `TestAccount` function with the following one:
 
 ```go
@@ -30,7 +31,7 @@ func TestAccount(t *testing.T) {
 
 We're using the `t.Error()` function to say that the test failed if something doesn't happen the way it supposes to happen.
 
-Also, notice that the test has the logic to create an account object (that doesn't exist yet), but we're designing at this moment how we'd like to interact with our package. **You'll notice that we'll provide you with the code for the tests as we don't want to explain line by line, but your mental model should be that you start little by little and do as many iterations as you need.** In our case, we're going to do only one iteration, which is writing the test, make sure it fails, and write the code that satisfies that test. On a daily basis, you should start simple and add complexity as you progress.
+Also, notice that the test has the logic to create an account object (that doesn't exist yet), but we're designing at this moment how we'd like to interact with our package. **You'll notice that we'll provide you with the code for the tests as we don't want to explain line by line, but your mental model should be that you start little by little and do as many iterations as you need.** In our case, we're going to do only one iteration, which is writing the test, make sure it fails, and write the code that satisfies that test. When coding on your own, you should start simple and add complexity as you progress.
 
 If you run the `go test -v` command, you should see a failing test in the output:
 
@@ -166,7 +167,8 @@ ok      github.com/msft/bank    0.197s
 
 **NOTE:** *From now on, we'll write one test case, but you should write a test for every functionality you add to your programs, like in this case, the error handling logic.*
 
-## Method: Withdraw
+## Implement the withdraw method
+
 Before we write the withdraw functionality, let's write the test for it:
 
 ```go
@@ -233,7 +235,8 @@ PASS
 ok      github.com/msft/bank    0.250s
 ```
 
-## Method: Statement
+## Implement the statement method
+
 Let's write a simple method to print out the statement that includes the account name, number, and its balance. But first, let's create the `TestStatement` function, like this:
 
 ```go
