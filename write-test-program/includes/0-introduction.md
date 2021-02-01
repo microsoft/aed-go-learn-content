@@ -7,7 +7,7 @@ Like other modules, you'll have to extend the application by solving a challenge
 
 ## Learning objectives
 
-In this module, you'll practice and learn about:
+In this module, you'll practice and learn:
 
 - How testing works in Go
 - How to wrap the core logic of a program into a package

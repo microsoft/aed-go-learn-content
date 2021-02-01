@@ -1,6 +1,8 @@
 # Get started with writing tests
 
-Before we jump into writing our program, let's talk about how testing in Go works. Testing is important to ensure that code works as expected. Each function should be tested A good practice to follow when coding is to use the Test Driven Development (TDD) approach. This means we'll write our tests first, then we'll write the code that satisfies that test.
+Before we jump into writing our program, let's talk testing and create our first test. Package testing provides support for automated testing of Go packages.
+
+Testing is important to ensure that code works as expected. Generally, there should be at least one test for each function in a package to confirm the functionality. A good practice to follow when coding is to use the Test Driven Development (TDD) approach. With this approach, we'll write our tests first, make sure they fail since the code they test doesn't yet exist, and then we'll write the code that satisfies that test.
 
 ## Create the test file
 
@@ -18,7 +20,7 @@ func TestAccount(t *testing.T) {
 }
 ```
 
-Open a terminal, and make sure at the `$GOPATH/src/bankcore/` location, then run the following command:
+Open a terminal, and make sure at the `$GOPATH/src/bankcore/` location, then use the following command to run the tests in verbose mode:
 
 ```sh
 go test -v
@@ -33,7 +35,7 @@ PASS
 ok      github.com/msft/bank    0.391s
 ```
 
-## Write a failing test for TestAccount
+## Write a failing test
 
 Using TDD, before writing any code, let's first write a failing test for it. Modify the `TestAccount` function with the following code:
 

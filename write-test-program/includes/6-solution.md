@@ -6,6 +6,8 @@ Here's the complete code that solves the two challenges in this module.
 
 ```go
 
+//...
+
 func TestTransfer(t *testing.T) {
     accountA := Account{
 		Customer: Customer{
@@ -48,7 +50,7 @@ import (
 
 //...
 
-// Transfer ...
+// Transfer function
 func (a *Account) Transfer(amount float64, dest *Account) error {
 	if amount <= 0 {
 		return errors.New("the amount to transfer should be greater than zero")

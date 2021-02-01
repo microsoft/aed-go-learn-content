@@ -28,7 +28,7 @@ type Account struct {
 }
 ```
 
-When you run the `go test -v` command now, you should see that the test is passing:
+When you run the `go test -v` command in your terminal now, you should see that the test is passing:
 
 ```output
 === RUN   TestAccount
@@ -41,7 +41,7 @@ This is passing because we have implemented the structs for *Customer* and *Acco
 
 ## Implement the deposit method
 
-We need to start with a method to start adding money to our account, but before we do that, let's create the `TestDeposit` function in the `bank_test.go` file, like this:
+We need to start with a method to allow adding money to our account, but before we do that, let's create the `TestDeposit` function in the `bank_test.go` file, like this:
 
 ```go
 func TestDeposit(t *testing.T) {
@@ -63,7 +63,7 @@ func TestDeposit(t *testing.T) {
 }
 ```
 
-When you run the `go test -v` command, you should see a failing test in the output:
+When you run `go test -v`, you should see a failing test in the output:
 
 ```output
 # github.com/msft/bank [github.com/msft/bank.test]
@@ -87,7 +87,7 @@ func (a *Account) Deposit(amount float64) error {
 }
 ```
 
-When you run the `go test -v` command, you should see that the test is passing:
+When you run `go test -v`, you should see that the test is passing:
 
 ```output
 === RUN   TestAccount
@@ -98,7 +98,7 @@ PASS
 ok      github.com/msft/bank    0.193s
 ```
 
-You could also write a test that confirms that you get an erro when you try to deposit a negative amount, like this:
+You could also write a test that confirms that you get an error when you try to deposit a negative amount, like this:
 
 ```go
 func TestDepositInvalid(t *testing.T) {
@@ -225,7 +225,7 @@ func TestStatement(t *testing.T) {
 }
 ```
 
-When you run the `go test -v` command, you should see a failing test in the output:
+When you run `go test -v`, you should see a failing test in the output:
 
 ```output
 # github.com/msft/bank [github.com/msft/bank.test]
@@ -242,7 +242,7 @@ func (a *Account) Statement() string {
 }
 ```
 
-If you run the `go test -v` command, you should see that the test is passing:
+When you run `go test -v`, you should see that the test is passing:
 
 ```output
 === RUN   TestAccount

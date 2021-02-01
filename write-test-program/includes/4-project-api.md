@@ -1,12 +1,12 @@
 # Write the bank API
 
-Now that we've built the online bank's core logic let's build a Web API to test it from a browser (or even the command line). For now, we'll not use a database to persist data, so we'll have to create a global variable to store all the accounts in memory. Additionally, we'll skip the testing part to avoid keeping this guide too long, but we suggest you follow the same approach we followed when building the core package.
+Now that we've built the online bank's core logic let's build a Web API to test it from a browser (or even the command line). For now, we'll not use a database to persist data, so we'll have to create a global variable to store all the accounts in memory. Additionally, we'll skip the testing part to avoid keeping this guide too long, but ideally you'll follow the same approach we followed when building the core package to write tests before code.
 
 ## Accounts in memory
 
 As we said previously, we're not going to use a database to persist data. Instead, we'll use a memory map for the accounts we'll create when the program starts. Additionally, we'll use a map to access the account information using the account number.
 
-Head over to the `$GOPATH/src/bankapi/main.go` file and use the following code to create the global `accounts` variable and initialize it with an account (something similar to what we did when creating the tests previously):
+Head over to the `$GOPATH/src/bankapi/main.go` file and add the following code to create the global `accounts` variable and initialize it with an account (something similar to what we did when creating the tests previously):
 
 ```go
 package main
@@ -35,7 +35,7 @@ Run the application with `go run main.go` to make sure you don't have any errors
 
 Creating a Web API in Go is very easy, as you've seen before in a previous module. So, we'll continue using the `net/http` package and use the `HandleFunc` and `ListenAndServe` functions to expose endpoints and launch the server. The `HandleFunc` function requires a name for the URL path you'd like to expose and the name of a function with the logic for that endpoint.
 
-Let's start by exposing the functionality to print out the statement for an account. You need to create the following function (pay attention to the parameters):
+Let's start by exposing the functionality to print out the statement for an account. You need to copy and paste the following function in `main.go`:
 
 ```go
 func statement(w http.ResponseWriter, req *http.Request) {
@@ -61,7 +61,7 @@ func statement(w http.ResponseWriter, req *http.Request) {
 
 The first highlight from the `statement` function is that it's receiving the object to write a response back to the browser (`w http.ResponseWriter`) and the request object to access the information from the HTTP request (`req *http.Request`). Then, notice that we're using the `req.URL.Query().Get()` function to read a parameter from the query string. This will be the account number that we'll send through the HTTP call and then access the account map to get its information using that value. But because we're getting data from the user, we should include some validations to avoid a crash. Only when we know we have a valid account number, we make the call to the `Statement()` method and print out the string it returns to the browser (`fmt.Fprintf(w, account.Statement())`).
 
-Now, you should use the following code in your `main()` function:
+Now, you should modify your `main()` function so it looks like this:
 
 ```go
 func main() {
@@ -95,7 +95,7 @@ You should see the following output:
 
 Let's continue using the same approach to expose the deposit method. In this case, we'd like to add money to the account we have in memory. So every time we call the `Deposit()` method, the balance should increase.
 
-Create a `deposit()` function in the main program that gets the account number from the query string, validates that the account exist in the `accounts` map, validates that the amount to deposit is a valid number, and then calls the `Deposit()` method, like this:
+Add a `deposit()` function in the main program that gets the account number from the query string, validates that the account exist in the `accounts` map, validates that the amount to deposit is a valid number, and then calls the `Deposit()` method, like this:
 
 ```go
 func deposit(w http.ResponseWriter, req *http.Request) {
@@ -127,9 +127,9 @@ func deposit(w http.ResponseWriter, req *http.Request) {
 }
 ```
 
-Notice that this function follows a similar approach to get and validate the data it receives from the user. We're also declaring and using variables directly in the `if` statement, which is very idiomatic in Go. Finally, after we add some funds to the account, we print out the statement to see the new account balance.
+Notice that this function follows a similar approach to get and validate the data it receives from the user. We're also declaring and using variables directly in the `if` statement. Finally, after we add some funds to the account, we print out the statement to see the new account balance.
 
-Now, you should expose a `/deposit` endpoint that calls the `deposit` function, like this `http.HandleFunc("/deposit", deposit)`. Your `main()` function should look like this:
+Now, you should expose a `/deposit` endpoint that calls the `deposit` function, like this `http.HandleFunc("/deposit", deposit)`. Modify your `main()` function to look like this:
 
 ```go
 func main() {
@@ -196,7 +196,7 @@ func withdraw(w http.ResponseWriter, req *http.Request) {
 }
 ```
 
-And now add the `/withdraw` endpoint in the `main()` function to expose the logic you have in the `withdra()` function. The `main()` function now should look like this:
+And now add the `/withdraw` endpoint in the `main()` function to expose the logic you have in the `withdraw()` function. Modify the `main()` function to look like this:
 
 ```go
 func main() {
@@ -243,4 +243,4 @@ You should see the following output:
 1001 - John - 200
 ```
 
-And that's it! You've created a Web API to expose certain functionality from a package you've built from scratch. Head over to the next section to continue practicing. This time you'll be presented with a challenge you have to write your own solution for.
+And that's it! You've created a Web API to expose functionality from a package you've built from scratch. Head over to the next section to continue practicing. This time you'll be presented with a challenge you will write your own solution for.

@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Write the bank API
-durationInMinutes: 9
+durationInMinutes: 10
 content: |
   [!include[](includes/4-project-api.md)]
