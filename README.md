@@ -22,12 +22,10 @@
 | Module 7 content | @christianhxc + @meaghanlewis | Complete | 1/20/2021 |
 | Module 7 content to Aquent | @shanama | Complete | 1/19/2020 |
 | Module 8 content | @christianhxc + @meaghanlewis | Complete | 1/29/2021 |
-| Module 8 content to Aquent | @shanama | Not Started | 2/1/2021 |
-| Review Content | @meaghanlewis | Not Started | < DATE > |
-| Content Draft on Learn | Aquent | Not Started | < DATE > |
-| Sign off on Content on Learn | @meaghanlewis | Not Started | < DATE > |
-| Publish Content | @shanama | Not Started | < DATE > |
-| Review Live Content | < YOUR NAME > | Not Started | < DATE > |
+| Module 8 content to Aquent | @shanama | Complete  | 2/1/2021 |
+| Review Content | @meaghanlewis | Complete  | 2/8/2021 |
+| Sign off on Content on Learn | @meaghanlewis | Complete  | 2/11/2021 |
+| Publish Content | @shanama | Complete | 2/12/2021 |
 
 ## Content Overview
 
